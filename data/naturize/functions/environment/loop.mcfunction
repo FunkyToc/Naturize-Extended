@@ -4,6 +4,5 @@
 # 
 
 
-function naturize:environment/daytime 
 function naturize:environment/quicksand 
 function naturize:environment/slimice 
