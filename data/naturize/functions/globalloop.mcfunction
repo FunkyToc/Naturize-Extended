@@ -1,4 +1,4 @@
-# naturize:globalloader
+# naturize:globalloop
 # 
 # Centralize all mcfunction to loop 
 # 
