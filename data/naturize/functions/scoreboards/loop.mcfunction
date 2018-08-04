@@ -4,5 +4,7 @@
 # 
 
 
-function naturize:scoreboards/timers 
-function naturize:scoreboards/randoms 
+function naturize:scoreboards/timers
+function naturize:scoreboards/randoms
+function naturize:scoreboards/players
+function naturize:scoreboards/weather

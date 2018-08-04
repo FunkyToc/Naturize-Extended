@@ -1,19 +1,23 @@
-# Global Init 
+# naturize:globalinit
 #
-# Reload all init.mcfunction
-# Set all scoreboards & tags 
+# Centralize all inits
+# Set all scoreboards & tags
 
 
-# Target the player 
-tag @s[tag=!Naturized] add init
+# Target the player
+execute as @s at @s[tag=!Naturized] add init
 
-function naturize:config/init
-function naturize:scoreboards/init
-function naturize:environment/init
-function naturize:particules/init
+# Destructor
+execute as @s at @s run function naturize:globaldestruct
 
-# Naturized 
-tag @a[tag=init] add Naturized
+# Inits
+execute as @s at @s run function naturize:config/init
+execute as @s at @s run function naturize:scoreboards/init
+execute as @s at @s run function naturize:environment/init
+execute as @s at @s run function naturize:particules/init
 
-# Remove init tag 
-tag @a remove init
+# Naturized
+tag @s[tag=init] add Naturized
+
+# Remove init tag
+tag @s remove init

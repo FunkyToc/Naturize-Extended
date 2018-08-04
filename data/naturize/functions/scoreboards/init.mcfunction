@@ -6,7 +6,7 @@
 
 # randoms
 scoreboard objectives add random1 dummy
-scoreboard players set @a random1 0
+scoreboard players set @s random1 0
 
 # Timers
 scoreboard objectives add timer_1s dummy
@@ -43,39 +43,39 @@ scoreboard objectives add timer_20m dummy
 scoreboard objectives add timer_25m dummy
 scoreboard objectives add timer_30m dummy
 
-scoreboard players set @a timer_1s 0
-scoreboard players set @a timer_2s 0
-scoreboard players set @a timer_3s 0
-scoreboard players set @a timer_4s 0
-scoreboard players set @a timer_5s 0
-scoreboard players set @a timer_6s 0
-scoreboard players set @a timer_7s 0
-scoreboard players set @a timer_8s 0
-scoreboard players set @a timer_9s 0
-scoreboard players set @a timer_10 0
-scoreboard players set @a timer_15 0
-scoreboard players set @a timer_20 0
-scoreboard players set @a timer_25 0
-scoreboard players set @a timer_30 0
-scoreboard players set @a timer_35 0
-scoreboard players set @a timer_40 0
-scoreboard players set @a timer_45 0
-scoreboard players set @a timer_50 0
-scoreboard players set @a timer_55s 0
-scoreboard players set @a timer_60s 0
-scoreboard players set @a timer_2m 0
-scoreboard players set @a timer_3m 0
-scoreboard players set @a timer_4m 0
-scoreboard players set @a timer_5m 0
-scoreboard players set @a timer_6m 0
-scoreboard players set @a timer_7m 0
-scoreboard players set @a timer_8m 0
-scoreboard players set @a timer_9m 0
-scoreboard players set @a timer_10m 0
-scoreboard players set @a timer_15m 0
-scoreboard players set @a timer_20m 0
-scoreboard players set @a timer_25m 0
-scoreboard players set @a timer_30m 0
+scoreboard players set @s timer_1s 0
+scoreboard players set @s timer_2s 0
+scoreboard players set @s timer_3s 0
+scoreboard players set @s timer_4s 0
+scoreboard players set @s timer_5s 0
+scoreboard players set @s timer_6s 0
+scoreboard players set @s timer_7s 0
+scoreboard players set @s timer_8s 0
+scoreboard players set @s timer_9s 0
+scoreboard players set @s timer_10 0
+scoreboard players set @s timer_15 0
+scoreboard players set @s timer_20 0
+scoreboard players set @s timer_25 0
+scoreboard players set @s timer_30 0
+scoreboard players set @s timer_35 0
+scoreboard players set @s timer_40 0
+scoreboard players set @s timer_45 0
+scoreboard players set @s timer_50 0
+scoreboard players set @s timer_55s 0
+scoreboard players set @s timer_60s 0
+scoreboard players set @s timer_2m 0
+scoreboard players set @s timer_3m 0
+scoreboard players set @s timer_4m 0
+scoreboard players set @s timer_5m 0
+scoreboard players set @s timer_6m 0
+scoreboard players set @s timer_7m 0
+scoreboard players set @s timer_8m 0
+scoreboard players set @s timer_9m 0
+scoreboard players set @s timer_10m 0
+scoreboard players set @s timer_15m 0
+scoreboard players set @s timer_20m 0
+scoreboard players set @s timer_25m 0
+scoreboard players set @s timer_30m 0
 
 # Triggers
 scoreboard objectives add trigger_1s dummy
@@ -145,3 +145,73 @@ scoreboard players set trigger_15m 0
 scoreboard players set trigger_20m 0
 scoreboard players set trigger_25m 0
 scoreboard players set trigger_30m 0
+
+# Players constant
+scoreboard objectives add Timestamp dummy
+scoreboard players set @s Timestamp 0
+scoreboard objectives add Health health
+scoreboard objectives add Armor armor
+scoreboard objectives add Food food
+scoreboard objectives add Air air
+scoreboard objectives add Level level
+scoreboard objectives add Kills totalKillCount
+scoreboard objectives add Deaths deathCount
+
+# Players status
+scoreboard objectives add OnGround dummy
+scoreboard players set @s OnGround 0
+
+scoreboard objectives add Jump minecraft.custom:minecraft.jump
+scoreboard players set @s Jump 0
+
+scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
+scoreboard players set @s Walk 0
+
+scoreboard objectives add WalkDistance minecraft.custom:minecraft.walk_one_cm
+scoreboard players set @s WalkDistance 0
+
+scoreboard objectives add Sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard players set @s Sprint 0
+
+scoreboard objectives add SprintDistance minecraft.custom:minecraft.sprint_one_cm
+scoreboard players set @s SprintDistance 0
+
+scoreboard objectives add Horse minecraft.custom:minecraft.horse_one_cm
+scoreboard players set @s Horse 0
+
+scoreboard objectives add HorseDistance minecraft.custom:minecraft.horse_one_cm
+scoreboard players set @s HorseDistance 0
+
+scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
+scoreboard players set @s Sneak 0
+
+scoreboard objectives add SneakTime minecraft.custom:minecraft.sneak_time
+scoreboard players set @s SneakTime 0
+
+scoreboard objectives add SneakDistance minecraft.custom:minecraft.crouch_one_cm
+scoreboard players set @s SneakDistance 0
+
+scoreboard objectives add ClimbDistance minecraft.custom:minecraft.climb_one_cm
+scoreboard players set @s ClimbDistance 0
+
+# DOES NOT WORK
+scoreboard objectives add FallDistance minecraft.custom:minecraft.fall_one_cm
+scoreboard players set @s FallDistance 0
+
+scoreboard objectives add LastRest minecraft.custom:minecraft.time_since_rest
+scoreboard players set @s LastRest 0
+
+scoreboard objectives add LastDeath minecraft.custom:minecraft.time_since_death
+scoreboard players set @s LastDeath 0
+
+scoreboard objectives add DmgD minecraft.custom:minecraft.damage_dealt
+scoreboard players set @s DmgD 0
+
+scoreboard objectives add DmgDealt minecraft.custom:minecraft.damage_dealt
+scoreboard players set @s DmgDealt 0
+
+scoreboard objectives add DmgT minecraft.custom:minecraft.damage_taken
+scoreboard players set @s DmgT 0
+
+scoreboard objectives add DmgTaken minecraft.custom:minecraft.damage_taken
+scoreboard players set @s DmgTaken 0
