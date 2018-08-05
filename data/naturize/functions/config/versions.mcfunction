@@ -5,16 +5,20 @@
 
 
 # Update version current-1
-tag @s[scores={version=..0}] add update
+tag @s[scores={mainversion=..-1}] add updateVersion
+tag @s[scores={subversion=..0}] add updateVersion
+tag @s[scores={bugversion=..-1}] add updateVersion
 
 # Init
-execute as @s[tag=update] at @s run function naturize:globalinit
+execute as @s[tag=updateVersion] at @s run function naturize:globalinit
 
-# Update current version
-scoreboard players set @s[tag=update] version 1
+# updateVersion current version
+scoreboard players set @s[tag=updateVersion] mainversion 0
+scoreboard players set @s[tag=updateVersion] subversion 1
+scoreboard players set @s[tag=updateVersion] bugversion 0
 
-title @s[tag=update] times 20 200 20
-title @s[tag=update] subtitle [{"text":"update "},{"score":{"name":"@s","objective":"version"}}]
-title @s[tag=update] title {"text":"Naturize : Extended","color":"dark_green"}
+title @s[tag=updateVersion] times 20 200 20
+title @s[tag=updateVersion] subtitle ["",{"text":"version "},{"score":{"name":"@s","objective":"mainversion"}},{"text":"."},{"score":{"name":"@s","objective":"subversion"}},{"text":"."},{"score":{"name":"@s","objective":"bugversion"}}]
+title @s[tag=updateVersion] title {"text":"Naturize : Extended","color":"dark_green"}
 
-tag @s[tag=update] remove update
+tag @s[tag=updateVersion] remove updateVersion

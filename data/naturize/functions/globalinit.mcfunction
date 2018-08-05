@@ -5,7 +5,7 @@
 
 
 # Target the player
-execute as @s at @s[tag=!Naturized] add init
+execute as @s at @s[tag=!Naturized] run tag @s add init
 
 # Destructor
 execute as @s at @s run function naturize:globaldestruct
