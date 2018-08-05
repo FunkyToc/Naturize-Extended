@@ -1,18 +1,20 @@
 # naturize:scoreboards/players
-# 
+#
 # Require all scoreboards
-# 
+#
 
 
 ## Constant
 execute store result score @a Timestamp run time query daytime
 
 ## Status
-# On ground 
+# On ground
 execute store result score @s OnGround run data get entity @s OnGround
+execute as @s[scores={OnGround=..1}] run scoreboard players set @s Grounded 0
 
 # On jump
-execute as @s[scores={Jump=1..}] run scoreboard players set @s Jump 0
+execute as @s[scores={Jumping=..0}] run scoreboard players set @s Jump 0
+execute as @s[scores={Jumping=1..}] run scoreboard players set @s Jumping 0
 
 # Walk distance
 execute as @s[scores={Walk=..0}] run scoreboard players set @s WalkDistance 0
@@ -33,10 +35,14 @@ execute as @s[scores={Sneak=1..}] run scoreboard players set @s Sneak 0
 # Sneak distance
 execute as @s[scores={SneakTime=..0}] run scoreboard players set @s SneakDistance 0
 
+# Air time
+execute as @s[scores={OnAir=..0}] run scoreboard players set @s AirDistance 0
+execute as @s[scores={OnAir=1..}] run scoreboard players set @s OnAir 0
+
 # On climb
 execute as @s[scores={OnGround=1..,ClimbDistance=1..}] run scoreboard players set @s ClimbDistance 0
 
-# On fall 
+# On fall
 execute as @s[scores={OnGround=1..}] run scoreboard players set @s FallDistance 0
 
 # Damage dealt

@@ -161,8 +161,14 @@ scoreboard objectives add Deaths deathCount
 scoreboard objectives add OnGround dummy
 scoreboard players set @s OnGround 0
 
+scoreboard objectives add Grounded dummy
+scoreboard players set @s Grounded 0
+
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
 scoreboard players set @s Jump 0
+
+scoreboard objectives add Jumping minecraft.custom:minecraft.jump
+scoreboard players set @s Jumping 0
 
 scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
 scoreboard players set @s Walk 0
@@ -197,6 +203,12 @@ scoreboard players set @s ClimbDistance 0
 # DOES NOT WORK
 scoreboard objectives add FallDistance minecraft.custom:minecraft.fall_one_cm
 scoreboard players set @s FallDistance 0
+
+scoreboard objectives add OnAir minecraft.custom:minecraft.fly_one_cm
+scoreboard players set @s OnAir 0
+
+scoreboard objectives add AirDistance minecraft.custom:minecraft.fly_one_cm
+scoreboard players set @s AirDistance 0
 
 scoreboard objectives add LastRest minecraft.custom:minecraft.time_since_rest
 scoreboard players set @s LastRest 0
