@@ -176,17 +176,26 @@ scoreboard players set @s Walk 0
 scoreboard objectives add WalkDistance minecraft.custom:minecraft.walk_one_cm
 scoreboard players set @s WalkDistance 0
 
+scoreboard objectives add WalkReset dummy
+scoreboard players set @s WalkReset 0
+
 scoreboard objectives add Sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard players set @s Sprint 0
 
 scoreboard objectives add SprintDistance minecraft.custom:minecraft.sprint_one_cm
 scoreboard players set @s SprintDistance 0
 
+scoreboard objectives add SprintReset dummy
+scoreboard players set @s SprintReset 0
+
 scoreboard objectives add Horse minecraft.custom:minecraft.horse_one_cm
 scoreboard players set @s Horse 0
 
 scoreboard objectives add HorseDistance minecraft.custom:minecraft.horse_one_cm
 scoreboard players set @s HorseDistance 0
+
+scoreboard objectives add HorseReset dummy
+scoreboard players set @s HorseReset 0
 
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 scoreboard players set @s Sneak 0

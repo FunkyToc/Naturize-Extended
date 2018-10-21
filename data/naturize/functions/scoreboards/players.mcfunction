@@ -17,15 +17,21 @@ execute as @s[scores={Jumping=..0}] run scoreboard players set @s Jump 0
 execute as @s[scores={Jumping=1..}] run scoreboard players set @s Jumping 0
 
 # Walk distance
-execute as @s[scores={Walk=..0}] run scoreboard players set @s WalkDistance 0
+execute as @s[scores={Walk=..0,WalkReset=..20}] run scoreboard players add @s WalkReset 1
+execute as @s[scores={WalkReset=20..}] run scoreboard players set @s WalkDistance 0
+execute as @s[scores={Walk=1..}] run scoreboard players set @s WalkReset 0
 execute as @s[scores={Walk=1..}] run scoreboard players set @s Walk 0
 
 # Sprint distance
-execute as @s[scores={Sprint=..0}] run scoreboard players set @s SprintDistance 0
+execute as @s[scores={Sprint=..0,SprintReset=..20}] run scoreboard players add @s SprintReset 1
+execute as @s[scores={SprintReset=20..}] run scoreboard players set @s SprintDistance 0
+execute as @s[scores={Sprint=1..}] run scoreboard players set @s SprintReset 0
 execute as @s[scores={Sprint=1..}] run scoreboard players set @s Sprint 0
 
 # Horse distance
-execute as @s[scores={Horse=..0}] run scoreboard players set @s HorseDistance 0
+execute as @s[scores={Horse=..0,HorseReset=..40}] run scoreboard players add @s HorseReset 1
+execute as @s[scores={HorseReset=40..}] run scoreboard players set @s HorseDistance 0
+execute as @s[scores={Horse=1..}] run scoreboard players set @s HorseReset 0
 execute as @s[scores={Horse=1..}] run scoreboard players set @s Horse 0
 
 # Sneak time
@@ -49,6 +55,6 @@ execute as @s[scores={OnGround=1..}] run scoreboard players set @s FallDistance 
 execute as @s[scores={DmgD=..0}] run scoreboard players set @s DmgDealt 0
 execute as @s[scores={DmgD=1..}] run scoreboard players set @s DmgD 0
 
-# Damage dealt
+# Damage taken
 execute as @s[scores={DmgT=..0}] run scoreboard players set @s DmgTaken 0
 execute as @s[scores={DmgT=1..}] run scoreboard players set @s DmgT 0
