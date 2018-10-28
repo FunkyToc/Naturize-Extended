@@ -32,7 +32,7 @@ execute as @s[type=!minecraft:item,scores={trigger_3s=1,SprintDistance=150..,ran
 
 
 # trigger on 
-execute as @s[type=!minecraft:item,scores={SneakTime=..0}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIce
+execute as @s[type=!minecraft:item,scores={SneakTime=..0},nbt={OnGround:1b}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIce
 
 # Small break
 execute as @s[tag=slimIce,scores={trigger_4s=1..,random1=35..45}] at @s run tag @s add slimIceSmall1
