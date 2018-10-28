@@ -5,7 +5,7 @@
 
 
 # trigger on 
-execute as @e[type=!minecraft:item] at @s if block ~ ~-1 ~ minecraft:sand run tag @s add quicksand
+execute as @e[type=!minecraft:item,nbt={OnGround:1b}] at @s if block ~ ~-1 ~ minecraft:sand run tag @s add quicksand
 
 # conditions 
 execute as @e[tag=quicksand] at @s unless block ~ ~0.6 ~ minecraft:air run tag @s remove quicksand
