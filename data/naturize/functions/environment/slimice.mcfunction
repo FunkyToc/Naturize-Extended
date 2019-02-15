@@ -13,12 +13,12 @@ execute as @s[type=!minecraft:item,scores={Jump=1..,SneakTime=..0,random1=60..99
 execute as @s[type=!minecraft:item,scores={Jump=1..,SneakTime=..0,random1=70..99}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium3
 
 # Player fall
-execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=20..50}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall1
-execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=25..50}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall2
-execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=30..50}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall3
-execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=70..90}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium1
-execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=75..90}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium2
-execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=80..90}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium3
+execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=10..50}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall1
+execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=15..50}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall2
+execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=20..50}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall3
+execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=60..90}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium1
+execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=65..90}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium2
+execute as @s[type=!minecraft:item,scores={OnGround=0,SneakTime=..0,random1=70..90}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceMedium3
 
 # Player walk
 execute as @s[type=!minecraft:item,scores={trigger_3s=1,WalkDistance=150..,random1=35..65}] at @s if block ~ ~-1 ~ minecraft:ice if block ~ ~-2 ~ minecraft:water run tag @s add slimIceSmall1
@@ -49,13 +49,13 @@ tag @s remove slimIceSmall1
 tag @s remove slimIceSmall2
 tag @s remove slimIceSmall3
 
-
 # Medium break
 execute as @s[tag=slimIce,scores={trigger_7s=1..,random1=20..30}] at @s run tag @s add slimIceMedium1
 execute as @s[tag=slimIce,scores={trigger_7s=1..,random1=22..28}] at @s run tag @s add slimIceMedium2
 execute as @s[tag=slimIce,scores={trigger_7s=1..,random1=24..26}] at @s run tag @s add slimIceMedium3
 
-execute as @s[tag=slimIceMedium1] at @s run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:water destroy
+execute as @s[tag=slimIceMedium1] at @s run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:water destroy
+execute as @s[tag=slimIceMedium1] at @s run fill ~1 ~-1 ~1 ~-1 ~-1 ~-1 minecraft:water replace minecraft:ice
 execute as @s[tag=slimIceMedium2] at @s run fill ~2 ~-1 ~ ~-2 ~-1 ~ minecraft:water replace minecraft:ice
 execute as @s[tag=slimIceMedium3] at @s run fill ~ ~-1 ~2 ~ ~-1 ~-2 minecraft:water replace minecraft:ice
 
@@ -65,13 +65,13 @@ tag @s remove slimIceMedium1
 tag @s remove slimIceMedium2
 tag @s remove slimIceMedium3
 
-
 # Huge break
 execute as @s[tag=slimIce,scores={trigger_9s=1..,random1=60..80}] at @s run tag @s add slimIceHight1
 execute as @s[tag=slimIce,scores={trigger_9s=1..,random1=64..76}] at @s run tag @s add slimIceHight2
 execute as @s[tag=slimIce,scores={trigger_9s=1..,random1=67..73}] at @s run tag @s add slimIceHight3
 
-execute as @s[tag=slimIceHight1] at @s run fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 minecraft:water destroy
+execute as @s[tag=slimIceHight1] at @s run fill ~ ~-1 ~ ~ ~-1 ~ minecraft:water destroy
+execute as @s[tag=slimIceHight1] at @s run fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 minecraft:water replace minecraft:ice
 execute as @s[tag=slimIceHight2] at @s run fill ~3 ~-1 ~1 ~-3 ~-1 ~-1 minecraft:water replace minecraft:ice
 execute as @s[tag=slimIceHight2] at @s run fill ~4 ~-1 ~ ~-4 ~-1 ~ minecraft:water replace minecraft:ice
 execute as @s[tag=slimIceHight2] at @s run fill ~2 ~-1 ~ ~2 ~-1 ~ minecraft:ice replace minecraft:water

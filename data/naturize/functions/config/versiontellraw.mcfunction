@@ -1,12 +1,31 @@
 # naturize:config/versiontellraw
 # 
 # Title and tellraw about current version of Naturize : extended
-# 
+# Display 3 last updates (versionMsgMax=..2)
 
 
+## Config
 title @s times 20 200 20
 title @s subtitle ["",{"text":"version "},{"score":{"name":"@s","objective":"mainversion"}},{"text":"."},{"score":{"name":"@s","objective":"subversion"}},{"text":"."},{"score":{"name":"@s","objective":"bugversion"}}]
 title @s title {"text":"Naturize : Extended","color":"dark_green"}
 
+
+## Intro
 tellraw @s ["",{"text":"Vous jouez avec le datapack "},{"text":"Naturize : extended","color":"dark_green"},{"text":" (v"},{"score":{"name":"@s","objective":"mainversion"}},{"text":"."},{"score":{"name":"@s","objective":"subversion"}},{"text":"."},{"score":{"name":"@s","objective":"bugversion"}},{"text":") !"}]
-tellraw @s ["",{"text":"Plus d'infos sur "},{"text":"http://naturize.fr","color":"dark_green"}]
+tellraw @s ["",{"text":"Dernières nouveautés :"}]
+
+
+## Versions messages
+# 0.1.1
+tellraw @s[scores={versionMsgMax=..2,mainversion=0..,subversion=1..,bugversion=1..}] ["",{"text":"- ajustement vitesse de marcheur de vent, ajout de ce message au changement de version."}]
+scoreboard players add @s versionMsgMax 1
+
+# 0.1.0
+tellraw @s[scores={versionMsgMax=..2,mainversion=0..,subversion=1..,bugversion=0..}] ["",{"text":"- marcheur de vent, glace fragile, sable mouvant."}]
+scoreboard players add @s versionMsgMax 1
+
+
+
+## More infos
+tellraw @s ["",{"text":"Plus d'infos sur "},{"text":"http://naturize.fr","clickEvent":{"action":"open_url","value":"http://naturize.fr"},"color":"dark_green"}]
+scoreboard players set @s versionMsgMax 0
