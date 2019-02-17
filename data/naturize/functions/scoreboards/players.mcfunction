@@ -34,12 +34,12 @@ execute as @s[scores={HorseReset=40..}] run scoreboard players set @s HorseDista
 execute as @s[scores={Horse=1..}] run scoreboard players set @s HorseReset 0
 execute as @s[scores={Horse=1..}] run scoreboard players set @s Horse 0
 
-# Sneak time
-execute as @s[scores={Sneak=..0}] run scoreboard players set @s SneakTime 0
+# Sneak
+execute as @s[scores={Sneak=..0,SneakReset=..20}] run scoreboard players add @s SneakReset 1
+execute as @s[scores={SneakReset=20..}] run scoreboard players set @s SneakDistance 0
+execute as @s[scores={SneakReset=20..}] run scoreboard players set @s SneakTime 0
+execute as @s[scores={Sneak=1..}] run scoreboard players set @s SneakReset 0
 execute as @s[scores={Sneak=1..}] run scoreboard players set @s Sneak 0
-
-# Sneak distance
-execute as @s[scores={SneakTime=..0}] run scoreboard players set @s SneakDistance 0
 
 # Air time
 execute as @s[scores={OnAir=..0}] run scoreboard players set @s AirDistance 0

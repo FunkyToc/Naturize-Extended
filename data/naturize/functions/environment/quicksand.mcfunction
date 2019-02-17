@@ -4,7 +4,7 @@
 # 
 
 
-# trigger on 
+# trigger 
 execute as @e[type=!minecraft:item,nbt={OnGround:1b}] at @s if block ~ ~-1 ~ minecraft:sand run tag @s add quicksand
 
 # conditions 

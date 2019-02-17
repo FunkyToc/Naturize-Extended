@@ -200,6 +200,9 @@ scoreboard players set @s HorseReset 0
 scoreboard objectives add Sneak minecraft.custom:minecraft.sneak_time
 scoreboard players set @s Sneak 0
 
+scoreboard objectives add SneakReset dummy
+scoreboard players set @s SneakReset 0
+
 scoreboard objectives add SneakTime minecraft.custom:minecraft.sneak_time
 scoreboard players set @s SneakTime 0
 

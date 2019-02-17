@@ -17,13 +17,16 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 ## Versions messages
 # 0.1.1
-tellraw @s[scores={versionMsgMax=..2,mainversion=0..,subversion=1..,bugversion=1..}] ["",{"text":"- ajustement vitesse de marcheur de vent, ajout de ce message au changement de version."}]
+tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=2..,bugversion=0..}] ["",{"text":"- timer reset pour le Sneak, system de sixieme sens."}]
+scoreboard players add @s versionMsgMax 1
+
+# 0.1.1
+tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=1..,bugversion=1..}] ["",{"text":"- ajustement vitesse de marcheur de vent, ajout de ce message au changement de version."}]
 scoreboard players add @s versionMsgMax 1
 
 # 0.1.0
-tellraw @s[scores={versionMsgMax=..2,mainversion=0..,subversion=1..,bugversion=0..}] ["",{"text":"- marcheur de vent, glace fragile, sable mouvant."}]
+tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=1..,bugversion=0..}] ["",{"text":"- marcheur de vent, glace fragile, sable mouvant."}]
 scoreboard players add @s versionMsgMax 1
-
 
 
 ## More infos
