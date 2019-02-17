@@ -49,7 +49,9 @@ execute as @s[scores={OnAir=1..}] run scoreboard players set @s OnAir 0
 execute as @s[scores={OnGround=1..,ClimbDistance=1..}] run scoreboard players set @s ClimbDistance 0
 
 # On fall
-execute as @s[scores={OnGround=1..}] run scoreboard players set @s FallDistance 0
+execute as @s[scores={OnGround=1..,FallDistance=1..,FallReset=..20}] run scoreboard players add @s FallReset 1
+execute as @s[scores={FallReset=20..}] run scoreboard players set @s FallDistance 0
+execute as @s[scores={FallReset=20..}] run scoreboard players set @s FallReset 0
 
 # Damage dealt
 execute as @s[scores={DmgD=..0}] run scoreboard players set @s DmgDealt 0

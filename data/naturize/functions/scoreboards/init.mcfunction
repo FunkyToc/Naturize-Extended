@@ -212,9 +212,11 @@ scoreboard players set @s SneakDistance 0
 scoreboard objectives add ClimbDistance minecraft.custom:minecraft.climb_one_cm
 scoreboard players set @s ClimbDistance 0
 
-# DOES NOT WORK
 scoreboard objectives add FallDistance minecraft.custom:minecraft.fall_one_cm
 scoreboard players set @s FallDistance 0
+
+scoreboard objectives add FallReset dummy
+scoreboard players set @s FallReset 0
 
 scoreboard objectives add OnAir minecraft.custom:minecraft.fly_one_cm
 scoreboard players set @s OnAir 0

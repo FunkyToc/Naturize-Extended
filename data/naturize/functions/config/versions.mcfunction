@@ -6,7 +6,7 @@
 
 # Check current version -1
 tag @s[scores={mainversion=..-1}] add updateVersion
-tag @s[scores={subversion=..1}] add updateVersion
+tag @s[scores={subversion=..2}] add updateVersion
 tag @s[scores={bugversion=..-1}] add updateVersion
 
 # Init
