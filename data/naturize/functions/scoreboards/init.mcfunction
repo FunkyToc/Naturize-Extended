@@ -52,15 +52,15 @@ scoreboard players set @s timer_6s 0
 scoreboard players set @s timer_7s 0
 scoreboard players set @s timer_8s 0
 scoreboard players set @s timer_9s 0
-scoreboard players set @s timer_10 0
-scoreboard players set @s timer_15 0
-scoreboard players set @s timer_20 0
-scoreboard players set @s timer_25 0
-scoreboard players set @s timer_30 0
-scoreboard players set @s timer_35 0
-scoreboard players set @s timer_40 0
-scoreboard players set @s timer_45 0
-scoreboard players set @s timer_50 0
+scoreboard players set @s timer_10s 0
+scoreboard players set @s timer_15s 0
+scoreboard players set @s timer_20s 0
+scoreboard players set @s timer_25s 0
+scoreboard players set @s timer_30s 0
+scoreboard players set @s timer_35s 0
+scoreboard players set @s timer_40s 0
+scoreboard players set @s timer_45s 0
+scoreboard players set @s timer_50s 0
 scoreboard players set @s timer_55s 0
 scoreboard players set @s timer_60s 0
 scoreboard players set @s timer_2m 0
@@ -87,14 +87,14 @@ scoreboard objectives add trigger_6s dummy
 scoreboard objectives add trigger_7s dummy
 scoreboard objectives add trigger_8s dummy
 scoreboard objectives add trigger_9s dummy
-scoreboard objectives add trigger_10 dummy
-scoreboard objectives add trigger_15 dummy
-scoreboard objectives add trigger_20 dummy
-scoreboard objectives add trigger_25 dummy
-scoreboard objectives add trigger_30 dummy
-scoreboard objectives add trigger_35 dummy
-scoreboard objectives add trigger_40 dummy
-scoreboard objectives add trigger_45 dummy
+scoreboard objectives add trigger_10s dummy
+scoreboard objectives add trigger_15s dummy
+scoreboard objectives add trigger_20s dummy
+scoreboard objectives add trigger_25s dummy
+scoreboard objectives add trigger_30s dummy
+scoreboard objectives add trigger_35s dummy
+scoreboard objectives add trigger_40s dummy
+scoreboard objectives add trigger_45s dummy
 scoreboard objectives add trigger_55s dummy
 scoreboard objectives add trigger_60s dummy
 scoreboard objectives add trigger_2m dummy
@@ -120,16 +120,16 @@ scoreboard players set trigger_6s 0
 scoreboard players set trigger_7s 0
 scoreboard players set trigger_8s 0
 scoreboard players set trigger_9s 0
-scoreboard players set trigger_10 0
-scoreboard players set trigger_15 0
-scoreboard players set trigger_20 0
-scoreboard players set trigger_25 0
-scoreboard players set trigger_30 0
-scoreboard players set trigger_35 0
-scoreboard players set trigger_40 0
-scoreboard players set trigger_45 0
-scoreboard players set trigger_50 0
-scoreboard players set trigger_50 0
+scoreboard players set trigger_10s 0
+scoreboard players set trigger_15s 0
+scoreboard players set trigger_20s 0
+scoreboard players set trigger_25s 0
+scoreboard players set trigger_30s 0
+scoreboard players set trigger_35s 0
+scoreboard players set trigger_40s 0
+scoreboard players set trigger_45s 0
+scoreboard players set trigger_50s 0
+scoreboard players set trigger_50s 0
 scoreboard players set trigger_55s 0
 scoreboard players set trigger_60s 0
 scoreboard players set trigger_2m 0
