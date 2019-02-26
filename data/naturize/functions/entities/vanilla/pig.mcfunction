@@ -8,6 +8,9 @@
 execute as @e[type=pig] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:resistance 10 2 true
 execute as @e[type=pig] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:speed 10 0 true
 
+# Fury
+execute as @e[type=pig] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=pig,distance=..10,nbt={Age:0}] add entityFury
+
 # Cannibal
 execute as @e[type=pig] at @s if entity @p[scores={Health=..4,trigger_1s=1},distance=..1.1] run tag @s add pigBiter
 execute as @e[type=pig,tag=pigBiter] at @s if entity @p[scores={Health=..4,trigger_1s=1},distance=..1.1] run tag @p[scores={Health=..4,trigger_1s=1},distance=..1.1] add pigBite

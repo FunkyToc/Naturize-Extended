@@ -16,16 +16,20 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.5.0
+tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=5..}] ["",{"text":"- particules pour détecter les entités en furie."}]
+scoreboard players add @s versionMsgMax 1
+
 # 0.4.0
 tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=4..}] ["",{"text":"- vache folles, poule de combat."}]
 scoreboard players add @s versionMsgMax 1
 
 # 0.3.0
-tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=3..}] ["",{"text":"- Effets lors d'une chute."}]
+tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=3..}] ["",{"text":"- effets lors d'une chute."}]
 scoreboard players add @s versionMsgMax 1
 
 # 0.2.0
-tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=2..}] ["",{"text":"- Sneak cooldown, system de sixieme sens."}]
+tellraw @s[scores={versionMsgMax=..3,mainversion=0..,subversion=2..}] ["",{"text":"- sneak cooldown, systeme de sixieme sens."}]
 scoreboard players add @s versionMsgMax 1
 
 # 0.1.0

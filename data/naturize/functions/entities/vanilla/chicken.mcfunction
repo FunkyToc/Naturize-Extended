@@ -8,8 +8,9 @@
 execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:resistance 10 0 true
 execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:speed 10 3 true
 execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:jump_boost 3 3 true
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run particle minecraft:firework ~ ~ ~ 0.5 0.5 0.5 0.05 5 force @a[distance=..50]
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run playsound entity.chicken.hurt neutral @a[distance=..20] ~ ~ ~ 1 1
+
+# Fury
+execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=chicken,distance=..10,nbt={Age:0}] add entityFury
 
 # Feather drop
 execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=chicken,distance=..10] add chickenRun

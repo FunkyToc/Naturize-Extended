@@ -4,3 +4,4 @@
 # 
 
 function naturize:particules/fallimpact
+function naturize:particules/fury
