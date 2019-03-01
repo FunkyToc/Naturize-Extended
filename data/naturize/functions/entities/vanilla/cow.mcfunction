@@ -11,7 +11,7 @@ execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] r
 # Fury
 execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=cow,distance=..10,nbt={Age:0}] add entityFury
 
-# Fury
+# Torero
 execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=cow,distance=..10] add cowFury
 execute as @e[type=cow,tag=cowFury] at @s if entity @p[distance=..1.2] run effect give @p[distance=..1.2] minecraft:wither 1 1 true
 execute as @e[type=cow,tag=cowFury] at @s if entity @p[distance=..1.2] run effect give @p[distance=..1.2] minecraft:slowness 1 2 true

@@ -5,7 +5,7 @@
 
 
 # Fury particles
-execute as @e[tag=entityFury] at @s run particle minecraft:block dirt ~ ~-0.3 ~ 0.3 0.1 0.3 1 1 force @a[distance=..30]
+execute as @e[tag=entityFury] at @s unless block ~ ~-1 ~ minecraft:air unless block ~ ~-1 ~ minecraft:water run particle minecraft:block dirt ~ ~-0.3 ~ 0.3 0.1 0.3 1 1 force @a[distance=..30]
 execute as @e[tag=entityFury] at @s if block ~ ~-1 ~ minecraft:grass_block run particle minecraft:block grass ~ ~-0.3 ~ 0.3 0.1 0.3 1 1 force @a[distance=..30]
 execute as @e[tag=entityFury] at @s if block ~ ~-1 ~ minecraft:gravel run particle minecraft:block gravel ~ ~ ~ 0.3 0.1 0.3 1 1 force @a[distance=..30]
 execute as @e[tag=entityFury] at @s if block ~ ~-1 ~ minecraft:sand run particle minecraft:block sand ~ ~ ~ 0.3 0.1 0.3 1 1 force @a[distance=..30]
