@@ -16,3 +16,4 @@ function naturize:entities/vanilla/pig
 function naturize:entities/vanilla/rabbit
 function naturize:entities/vanilla/sheep
 function naturize:entities/vanilla/turtle
+function naturize:entities/vanilla/zombie

@@ -230,14 +230,8 @@ scoreboard players set @s LastRest 0
 scoreboard objectives add LastDeath minecraft.custom:minecraft.time_since_death
 scoreboard players set @s LastDeath 0
 
-scoreboard objectives add DmgD minecraft.custom:minecraft.damage_dealt
-scoreboard players set @s DmgD 0
-
 scoreboard objectives add DmgDealt minecraft.custom:minecraft.damage_dealt
 scoreboard players set @s DmgDealt 0
-
-scoreboard objectives add DmgT minecraft.custom:minecraft.damage_taken
-scoreboard players set @s DmgT 0
 
 scoreboard objectives add DmgTaken minecraft.custom:minecraft.damage_taken
 scoreboard players set @s DmgTaken 0

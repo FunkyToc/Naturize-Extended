@@ -54,9 +54,7 @@ execute as @s[scores={FallReset=20..}] run scoreboard players set @s FallDistanc
 execute as @s[scores={FallReset=20..}] run scoreboard players set @s FallReset 0
 
 # Damage dealt
-execute as @s[scores={DmgD=..0}] run scoreboard players set @s DmgDealt 0
-execute as @s[scores={DmgD=1..}] run scoreboard players set @s DmgD 0
+execute as @s[scores={DmgDealt=1..}] run scoreboard players set @s DmgDealt 0
 
 # Damage taken
-execute as @s[scores={DmgT=..0}] run scoreboard players set @s DmgTaken 0
-execute as @s[scores={DmgT=1..}] run scoreboard players set @s DmgT 0
+execute as @s[scores={DmgTaken=1..}] run scoreboard players set @s DmgTaken 0

@@ -6,11 +6,19 @@
 
 # Check current version -1
 tag @s[scores={mainversion=..-1}] add updateVersion
-tag @s[scores={subversion=..6}] add updateVersion
+tag @s[scores={subversion=..7}] add updateVersion
 tag @s[scores={bugversion=..-1}] add updateVersion
 
 # Init
 execute as @s[tag=updateVersion] at @s run function naturize:globalinit
+
+# Version
+execute as @s[tag=updateVersion] at @s run scoreboard players set @s mainversion 0
+execute as @s[tag=updateVersion] at @s run scoreboard players set @s subversion 8
+execute as @s[tag=updateVersion] at @s run scoreboard players set @s bugversion 0
+
+# Display lasts news
 execute as @s[tag=updateVersion] at @s run function naturize:config/versiontellraw
 
 tag @s[tag=updateVersion] remove updateVersion
+

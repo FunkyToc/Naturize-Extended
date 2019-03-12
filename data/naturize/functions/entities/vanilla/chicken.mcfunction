@@ -14,7 +14,6 @@ execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..
 
 # Feather drop
 execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=chicken,distance=..10] add chickenRun
-execute as @e[type=chicken,tag=chickenRun] at @s run particle minecraft:spit ~ ~-0.1 ~ 0.2 0.15 0.2 0.05 1 force @a[distance=..50]
 execute as @e[type=chicken,tag=chickenRun] at @s if entity @p[scores={trigger_3s=1}] run summon minecraft:item ~ ~0.3 ~ {Item:{id:"minecraft:feather",Count:1b}}
 execute as @e[type=chicken,tag=chickenRun] at @s if entity @p[scores={trigger_20s=1},distance=..10] run tag @s remove chickenRun
 execute as @e[type=chicken,tag=chickenRun] at @s unless entity @a[distance=..10] run tag @s remove chickenRun
