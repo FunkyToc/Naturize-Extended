@@ -6,14 +6,14 @@
 
 ## Status
 # On small sprint
-execute as @s[type=!minecraft:item,scores={SprintDistance=1000..3000}] at @s run effect give @s minecraft:speed 2 0 true
-execute as @s[type=!minecraft:item,scores={SprintDistance=1000..3000}] at @s run effect give @s minecraft:jump_boost 1 0 true
-execute as @s[type=!minecraft:item,scores={SprintDistance=1000..}] at @s run particle minecraft:cloud ~ ~ ~ 0.2 0.2 0.2 0.0001 1 normal
+execute as @s[type=!minecraft:item,scores={SprintDistance=1000..2999}] at @s run effect give @s minecraft:speed 2 0 true
+execute as @s[type=!minecraft:item,scores={SprintDistance=1000..2999}] at @s run effect give @s minecraft:jump_boost 1 0 true
+execute as @s[type=!minecraft:item,scores={SprintDistance=1000..}] at @s run particle minecraft:dust 0.8 0.8 0.6 0.8 ~ ~ ~ 0.2 0.2 0.2 0.0001 3 normal
 
 # On long sprint
 execute as @s[type=!minecraft:item,scores={SprintDistance=3000..}] at @s run effect give @s minecraft:speed 2 1 true
 execute as @s[type=!minecraft:item,scores={SprintDistance=3000..}] at @s run effect give @s minecraft:jump_boost 1 1 true
-execute as @s[type=!minecraft:item,scores={SprintDistance=3000..}] at @s run particle minecraft:sweep_attack ~ ~1 ~ 1 1 1 0.01 1 normal
+execute as @s[type=!minecraft:item,scores={SprintDistance=3000..,trigger_1s=1}] at @s run particle minecraft:sweep_attack ~ ~1 ~ 0.5 0.5 0.5 0.01 1 normal
 
 
 ## Terrains

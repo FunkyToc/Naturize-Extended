@@ -5,15 +5,15 @@
 
 
 # Fear of aggressives players
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:resistance 10 0 true
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:speed 10 3 true
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:jump_boost 3 3 true
+execute as @e[type=chicken,nbt={HurtTime:10s}] at @s run effect give @e[type=chicken,distance=..8] minecraft:resistance 10 0 true
+execute as @e[type=chicken,nbt={HurtTime:10s}] at @s run effect give @e[type=chicken,distance=..8] minecraft:speed 10 3 true
+execute as @e[type=chicken,nbt={HurtTime:10s}] at @s run effect give @e[type=chicken,distance=..8] minecraft:jump_boost 3 3 true
 
 # Fury
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=chicken,distance=..10,nbt={Age:0}] add entityFury
+execute as @e[type=chicken,nbt={HurtTime:10s}] at @s run tag @e[type=chicken,distance=..8,nbt={Age:0}] add entityFury
 
 # Feather drop
-execute as @e[type=chicken] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=chicken,distance=..10] add chickenRun
-execute as @e[type=chicken,tag=chickenRun] at @s if entity @p[scores={trigger_3s=1}] run summon minecraft:item ~ ~0.3 ~ {Item:{id:"minecraft:feather",Count:1b}}
+execute as @e[type=chicken,nbt={HurtTime:10s}] at @s run tag @e[type=chicken,distance=..1] add chickenRun
+execute as @e[type=chicken,tag=chickenRun] at @s if entity @p[scores={trigger_8s=1}] run summon minecraft:item ~ ~0.3 ~ {Item:{id:"minecraft:feather",Count:1b}}
 execute as @e[type=chicken,tag=chickenRun] at @s if entity @p[scores={trigger_20s=1},distance=..10] run tag @s remove chickenRun
 execute as @e[type=chicken,tag=chickenRun] at @s unless entity @a[distance=..10] run tag @s remove chickenRun

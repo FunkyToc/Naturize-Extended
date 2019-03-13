@@ -5,9 +5,10 @@
 
 
 # players
-execute as @e[type=player,nbt={HurtTime:9s}] at @s run particle minecraft:block redstone_block ~ ~1.2 ~ 0.2 0.1 0.2 1 10 force @a[distance=..30]
-execute as @e[type=player,nbt={HurtTime:9s},scores={FallDistance=800..1499}] at @s run particle minecraft:block redstone_block ~ ~1.2 ~ 0.25 0.1 0.25 1 50 force @a[distance=..30]
-execute as @e[type=player,nbt={HurtTime:9s},scores={FallDistance=1500..}] at @s run particle minecraft:block redstone_block ~ ~1.2 ~ 0.3 0.3 0.3 1 100 force @a[distance=..30]
+execute as @e[type=player,nbt={HurtTime:9s}] at @s unless entity @s[scores={Air=0}] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.2 0.1 0.2 1 10 force @a[distance=..30]
+execute as @e[type=player,nbt={HurtTime:9s},scores={FallDistance=800..1499}] at @s unless entity @s[scores={Air=0}] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.25 0.1 0.25 1 50 force @a[distance=..30]
+execute as @e[type=player,nbt={HurtTime:9s},scores={FallDistance=1500..}] at @s unless entity @s[scores={Air=0}] run particle minecraft:block redstone_block ~ ~1.2 ~ 0.3 0.3 0.3 1 100 force @a[distance=..30]
+
 
 # entites
 execute as @e[type=bat,nbt={HurtTime:10s}] at @s run particle minecraft:block redstone_block ~ ~ ~ 0.1 0.1 0.1 1 5 force @a[distance=..30]

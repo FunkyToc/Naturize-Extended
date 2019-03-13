@@ -17,6 +17,10 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.9.0
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] ["",{"text":"- Buff de panoplie d'armure et etat de fatigue."}]
+scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] versionMsgMax 1
+
 # 0.8.0
 tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=8..}] ["",{"text":"- nouveau zombie redoutable et particules de sang."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=8..}] versionMsgMax 1
