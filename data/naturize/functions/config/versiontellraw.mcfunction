@@ -17,6 +17,10 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.10.0
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=10..}] ["",{"text":"- Spectre Noir qui hante le joueur fatigue."}]
+scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=10..}] versionMsgMax 1
+
 # 0.9.0
 tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] ["",{"text":"- Buff de panoplie d'armure et etat de fatigue."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] versionMsgMax 1

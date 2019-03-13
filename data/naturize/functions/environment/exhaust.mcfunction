@@ -23,7 +23,6 @@ execute as @e[scores={LastRest=66000..,trigger_50s=1}] at @s run effect give @s 
 execute as @e[scores={LastRest=88000..}] at @s run effect give @s minecraft:mining_fatigue 2 2 true
 execute as @e[scores={LastRest=88000..,trigger_40s=1}] at @s run effect give @s minecraft:nausea 6 0 true
 
-# Hallucination
-execute as @e[scores={LastRest=44000..,trigger_30s=1}] at @s run particle minecraft:squid_ink ~ ~1.2 ~ 0.5 0.5 0.5 0.1 1 normal @s
-execute as @e[scores={LastRest=66000..,trigger_20s=1}] at @s run particle minecraft:squid_ink ~ ~1.2 ~ 0.5 0.5 0.5 0.1 1 normal @s
-execute as @e[scores={LastRest=88000..,trigger_9s=1}] at @s run particle minecraft:squid_ink ~ ~1.2 ~ 0.5 0.5 0.5 0.1 1 normal @s
+# Blacksmoke hallucinations
+tag @a[scores={LastRest=88000..}] add blacksmokeTarget
+tag @a[scores={LastRest=..44000,trigger_10s=1}] remove blacksmokeTarget

@@ -4,4 +4,5 @@
 #
 
 
+function naturize:entities/custom/blacksmoke
 function naturize:entities/custom/polarbear
