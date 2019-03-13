@@ -9,7 +9,7 @@ execute unless entity @e[tag=blacksmokeTarget] run tp @e[type=bat,tag=blacksmoke
 
 # Apparence
 execute as @e[type=bat,tag=blacksmoke] at @s run effect give @s minecraft:invisibility 999 0 true
-execute as @e[type=bat,tag=blacksmoke] at @s if entity @e[tag=blacksmokeTarget,distance=5..] facing entity @e[tag=blacksmokeTarget,sort=nearest] eyes run tp @s ^ ^ ^0.2
+execute as @e[type=bat,tag=blacksmoke] at @s if entity @e[tag=blacksmokeTarget,distance=7..] facing entity @e[tag=blacksmokeTarget,sort=nearest] eyes run tp @s ^ ^ ^0.3
 execute as @e[type=bat,tag=blacksmoke] at @s if entity @e[tag=blacksmokeTarget,distance=..16] run particle minecraft:smoke ~ ~ ~ 0.2 0.2 0.2 0.01 5 force @p[tag=blacksmokeTarget,distance=..50]
 execute as @e[type=bat,tag=blacksmoke] at @s if entity @e[tag=blacksmokeTarget,distance=..16] run particle minecraft:large_smoke ~ ~ ~ 0.1 0.1 0.1 0.01 3 force @p[tag=blacksmokeTarget,distance=..50]
 
