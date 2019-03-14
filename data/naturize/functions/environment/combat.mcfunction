@@ -1,5 +1,5 @@
 # naturize:environment/combat
 # 
-# Add figth effects and particules to the player
+# Add figth effects and mecanismes
 # 
 

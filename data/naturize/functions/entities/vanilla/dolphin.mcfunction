@@ -5,13 +5,13 @@
 
 
 # Fear of aggressives players
-execute as @e[type=dolphin] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:speed 10 10 true
+execute as @e[type=dolphin,nbt={HurtTime:10s}] at @s run effect give @s minecraft:speed 10 10 true
 
 # Fury
 execute as @e[type=dolphin] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=dolphin,distance=..10] add entityFury
 
 # Choc
-execute as @e[type=dolphin] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=dolphin,distance=..10] add dolphinFury
+execute as @e[type=dolphin,nbt={HurtTime:10s}] at @s run tag @e[type=dolphin,distance=..10] add dolphinFury
 execute as @e[type=dolphin,tag=dolphinFury] at @s if entity @p[distance=..1.5] run effect give @p[distance=..1.5] minecraft:wither 1 1 true
 execute as @e[type=dolphin,tag=dolphinFury] at @s if entity @p[distance=..1.5] run effect give @p[distance=..1.5] minecraft:slowness 1 2 true
 execute as @e[type=dolphin,tag=dolphinFury] at @s if entity @p[distance=..1.5] run playsound entity.dolphin.hurt neutral @a[distance=..10] ~ ~ ~ 1 1

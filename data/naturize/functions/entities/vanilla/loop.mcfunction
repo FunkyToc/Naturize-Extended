@@ -4,7 +4,7 @@
 #
 
 
-function naturize:entities/vanilla/boat
+execute if score Option Opt_EntBoatkill matches 1 run function naturize:entities/vanilla/boat
 function naturize:entities/vanilla/chicken
 function naturize:entities/vanilla/cow
 function naturize:entities/vanilla/dolphin

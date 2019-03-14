@@ -1,24 +1,28 @@
 # naturize:config/versions
 # 
-# Create versions migrations
+# Allow automatic updates
 # 
 
 
-# Check current version -1
-tag @s[scores={mainversion=..-1}] add updateVersion
-tag @s[scores={subversion=..9}] add updateVersion
-tag @s[scores={bugversion=..0}] add updateVersion
+# Official version
+scoreboard players set Option mainversion 0
+scoreboard players set Option subversion 11
+scoreboard players set Option bugversion 0
+
+# Check earlier versions
+execute if score @s mainversion < Option mainversion as @s run tag @s add updateVersion
+execute if score @s subversion < Option subversion as @s run tag @s add updateVersion
+execute if score @s bugversion < Option bugversion as @s run tag @s add updateVersion
 
 # Init
 execute as @s[tag=updateVersion] at @s run function naturize:globalinit
 
-# Version
-execute as @s[tag=updateVersion] at @s run scoreboard players set @s mainversion 0
-execute as @s[tag=updateVersion] at @s run scoreboard players set @s subversion 10
-execute as @s[tag=updateVersion] at @s run scoreboard players set @s bugversion 1
+# Player version update
+execute as @s[tag=updateVersion] at @s run scoreboard players operation @s mainversion = Option mainversion
+execute as @s[tag=updateVersion] at @s run scoreboard players operation @s subversion = Option subversion
+execute as @s[tag=updateVersion] at @s run scoreboard players operation @s bugversion = Option bugversion
 
 # Display lasts news
-execute as @s[tag=updateVersion] at @s run function naturize:config/versiontellraw
+execute if score Option Opt_Versioninfo matches 1 as @s[tag=updateVersion] at @s run function naturize:config/versioninfo
 
 tag @s[tag=updateVersion] remove updateVersion
-

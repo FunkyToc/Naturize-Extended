@@ -5,14 +5,14 @@
 
 
 # Fear of aggressives players
-execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:resistance 10 2 true
-execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run effect give @s minecraft:speed 10 0 true
+execute as @e[type=cow,nbt={HurtTime:10s}] at @s run effect give @s minecraft:resistance 10 2 true
+execute as @e[type=cow,nbt={HurtTime:10s}] at @s run effect give @s minecraft:speed 10 0 true
 
 # Fury
 execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=cow,distance=..10,nbt={Age:0}] add entityFury
 
 # Torero
-execute as @e[type=cow] at @s if entity @a[distance=..8,scores={DmgDealt=1..}] run tag @e[type=cow,distance=..10,nbt={Age:0}] add cowFury
+execute as @e[type=cow,nbt={HurtTime:10s}] at @s run tag @e[type=cow,distance=..5,nbt={Age:0}] add cowFury
 execute as @e[type=cow,tag=cowFury] at @s if entity @p[distance=..1.2] run effect give @p[distance=..1.2] minecraft:wither 1 1 true
 execute as @e[type=cow,tag=cowFury] at @s if entity @p[distance=..1.2] run effect give @p[distance=..1.2] minecraft:slowness 1 2 true
 execute as @e[type=cow,tag=cowFury] at @s if entity @p[distance=..1.2] run playsound entity.cow.hurt neutral @a[distance=..10] ~ ~ ~ 1 1

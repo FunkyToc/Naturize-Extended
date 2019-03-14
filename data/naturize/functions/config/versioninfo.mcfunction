@@ -1,12 +1,12 @@
-# naturize:config/versiontellraw
+# naturize:config/versioninfo
 # 
 # Title and tellraw about current version of Naturize : extended
-# Display 3 last updates (versionMsgMax=..2)
+# Display 5 last updates (versionMsgMax=..4)
 
 
 ## Config
 scoreboard players set @s versionMsgMax 0
-title @s times 20 200 20
+title @s times 20 240 20
 title @s subtitle ["",{"text":"version "},{"score":{"name":"@s","objective":"mainversion"}},{"text":"."},{"score":{"name":"@s","objective":"subversion"}},{"text":"."},{"score":{"name":"@s","objective":"bugversion"}}]
 title @s title {"text":"Naturize : Extended","color":"dark_green"}
 
@@ -17,6 +17,10 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.11.0
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=11..}] ["",{"text":"- Fichier de config pour ajuster le datapack."}]
+scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=11..}] versionMsgMax 1
+
 # 0.10.0
 tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=10..}] ["",{"text":"- Spectre Noir qui hante le joueur fatigue."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=10..}] versionMsgMax 1
