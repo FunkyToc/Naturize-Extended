@@ -4,7 +4,6 @@
 # /!\ NO, DON'T EVEN TRY /!\
 # /!\ YOU SHOULDN'T DO THAT /!\
 
-
 ## MANUAL
 # Modify numerics values to adjust the datapack to your needs
 # Set the scoreboard value to 1 to ENABLE
@@ -82,6 +81,10 @@ scoreboard players set Option Opt_EnvSlimice 1
 # If set to 0 : disable speed and jump effects on sprint
 scoreboard players set Option Opt_EnvWalker 1
 
+# Weapon set
+# If set to 0 : weapon set won't affect combat
+scoreboard players set Option Opt_EnvWeaponset 1
+
 # Weather effects
 # If set to 0 : weather won't affects player's status
 scoreboard players set Option Opt_EnvWeather 0
@@ -104,3 +107,14 @@ scoreboard players set Option Opt_PartFallimp 1
 # Entities fury mode
 # If set to 0 : entities won't display particules on danger
 scoreboard players set Option Opt_PartFury 1
+
+
+### SKILLS
+
+# Burn skill
+# If set to 0 : burn skill will be disabled
+scoreboard players set Option Opt_SkillsBurn 1
+
+# Stun skill
+# If set to 0 : stun skill will be disabled
+scoreboard players set Option Opt_SkillsStun 1

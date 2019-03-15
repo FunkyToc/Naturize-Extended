@@ -17,6 +17,10 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.12.0
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=12..}] ["",{"text":"- Torche de combat (effets de brulures) et pelles de combat (stun)."}]
+scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=12..}] versionMsgMax 1
+
 # 0.11.0
 tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=11..}] ["",{"text":"- Fichier de config pour ajuster le datapack."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=11..}] versionMsgMax 1

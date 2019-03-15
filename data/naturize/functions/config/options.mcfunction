@@ -27,6 +27,7 @@ scoreboard objectives add Opt_EnvInjuries dummy
 scoreboard objectives add Opt_EnvQuicksand dummy
 scoreboard objectives add Opt_EnvSlimice dummy
 scoreboard objectives add Opt_EnvWalker dummy
+scoreboard objectives add Opt_EnvWeaponset dummy
 scoreboard objectives add Opt_EnvWeather dummy
 
 # Particules
@@ -34,6 +35,10 @@ scoreboard objectives add Opt_PartBleeding dummy
 scoreboard objectives add Opt_PartBlood dummy
 scoreboard objectives add Opt_PartFallimp dummy
 scoreboard objectives add Opt_PartFury dummy
+
+# Particules
+scoreboard objectives add Opt_SkillsBurn dummy
+scoreboard objectives add Opt_SkillsStun dummy
 
 ## Load default config
 function naturize:properties

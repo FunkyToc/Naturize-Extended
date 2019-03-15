@@ -16,3 +16,4 @@ execute if score Option Opt_Enable matches 1 run function naturize:entities/loop
 execute if score Option Opt_Enable matches 1 as @e[tag=Naturized] run function naturize:environment/loop
 execute if score Option Opt_Enable matches 1 run function naturize:particules/loop
 execute if score Option Opt_Enable matches 1 as @e[tag=Naturized] run function naturize:scoreboards/loop
+execute if score Option Opt_Enable matches 1 run function naturize:skills/loop

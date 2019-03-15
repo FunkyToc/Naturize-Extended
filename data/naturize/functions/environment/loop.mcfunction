@@ -12,4 +12,5 @@ execute if score Option Opt_EnvInjuries matches 1 run function naturize:environm
 execute if score Option Opt_EnvQuicksand matches 1 run function naturize:environment/quicksand
 execute if score Option Opt_EnvSlimice matches 1 run function naturize:environment/slimice
 execute if score Option Opt_EnvWalker matches 1 run function naturize:environment/walker
+execute if score Option Opt_EnvWeaponset matches 1 run function naturize:environment/weaponset
 execute if score Option Opt_EnvWeather matches 1 run function naturize:environment/weather

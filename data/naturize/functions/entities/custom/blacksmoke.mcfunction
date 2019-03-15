@@ -3,8 +3,9 @@
 # Create a passive blacksmoke wich follow the player when he is tired
 # Need a target @p[tag=blacksmokeTarget] to follow
 
+
 # Summon 
-execute as @e[tag=blacksmokeTarget,scores={trigger_10m=1}] at @s run summon minecraft:bat ~ ~20 ~ {Silent:1b,Invulnerable:1b,Tags:["blacksmoke"]}
+execute as @e[tag=blacksmokeTarget,scores={trigger_10m=1}] at @s unless entity @e[type=bat,tag=blacksmoke,distance=..8] run summon minecraft:bat ~ ~20 ~ {Silent:1b,Invulnerable:1b,Tags:["blacksmoke"]}
 execute unless entity @e[tag=blacksmokeTarget] run tp @e[type=bat,tag=blacksmoke] ~ -50 ~
 
 # Apparence
