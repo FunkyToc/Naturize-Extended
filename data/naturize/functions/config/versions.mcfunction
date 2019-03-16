@@ -7,7 +7,7 @@
 # Official version
 scoreboard players set Option mainversion 0
 scoreboard players set Option subversion 12
-scoreboard players set Option bugversion 1
+scoreboard players set Option bugversion 2
 
 # Check earlier versions
 execute if score @s mainversion < Option mainversion as @s run tag @s add updateVersion
