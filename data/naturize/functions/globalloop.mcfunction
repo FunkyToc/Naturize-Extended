@@ -8,7 +8,7 @@
 function naturize:config/options
 
 # New player detected
-execute if score Option Opt_Newplayer matches 1 as @a[tag=!Naturized] at @s run function naturize:config/newplayer
+execute if score Option Opt_Newplayer matches 1 if entity @a[tag=!Naturized] as @a[tag=!Naturized] at @s run function naturize:config/newplayer
 
 # Loops
 execute if score Option Opt_Enable matches 1 as @e[tag=Naturized] run function naturize:config/loop

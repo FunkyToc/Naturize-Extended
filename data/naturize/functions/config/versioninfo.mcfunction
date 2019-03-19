@@ -17,6 +17,10 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.14.0
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=14..}] ["",{"text":"- Fleche enflammée (torche) et fleche explosive (tnt)."}]
+scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=14..}] versionMsgMax 1
+
 # 0.13.0
 tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=13..}] ["",{"text":"- Epees tranchantes (saignements) et haches de berserk (status berserk)."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=13..}] versionMsgMax 1

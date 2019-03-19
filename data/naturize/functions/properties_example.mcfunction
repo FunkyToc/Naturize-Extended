@@ -111,6 +111,10 @@ scoreboard players set Option Opt_PartFury 1
 
 ### SKILLS
 
+# Arrows skill
+# If set to 0 : special arrows will be disabled
+scoreboard players set Option Opt_SkillsArrows 1
+
 # Berserk skill
 # If set to 0 : berserk skill will be disabled
 scoreboard players set Option Opt_SkillsBerser 1

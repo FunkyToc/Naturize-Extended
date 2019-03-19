@@ -1,4 +1,3 @@
-
 # naturize:environment/weaponbuff
 # 
 # Add figth skills depending to selected weapons
@@ -58,3 +57,13 @@ tag @e[tag=ShovelMainhand] remove ShovelMainhand
 # Main hand bow
 
 # Main hand bow + Off hand torch
+execute as @e[nbt={SelectedItem:{id:"minecraft:bow"},Inventory:[{Slot:-106b,id:"minecraft:torch"}]}] run tag @s add BowTorchMainhand
+execute as @e[tag=BowTorchMainhand] at @s run tag @e[type=arrow,tag=!burnArrow,distance=..1.55,nbt={inGround:0b}] add burnArrow
+tag @e[tag=BowTorchMainhand] remove BowTorchMainhand
+
+# Main hand bow + Off hand gunpowder
+execute as @e[nbt={SelectedItem:{id:"minecraft:bow"},Inventory:[{Slot:-106b,id:"minecraft:tnt"}]}] run tag @s add BowPowderMainhand
+execute as @e[tag=BowPowderMainhand] at @s if entity @e[type=arrow,tag=!explosiveArrow,distance=..1.55,nbt={inGround:0b}] run clear @s minecraft:tnt 1
+execute as @e[tag=BowPowderMainhand] at @s run tag @e[type=arrow,tag=!explosiveArrow,distance=..1.55,nbt={inGround:0b}] add explosiveArrow
+tag @e[tag=BowPowderMainhand] remove BowPowderMainhand
+

@@ -32,7 +32,7 @@ tag @e[tag=berserkTarget] remove berserkTarget
 # Berserk particules
 execute as @e[scores={berserkLevel=50..}] at @s run particle minecraft:dust 1 0.2 0 1 ~ ~0.7 ~ 0.15 0.3 0.15 0.01 2 force @a[distance=..30]
 execute as @e[scores={berserkLevel=75..}] at @s run particle minecraft:dust 1 0.2 0 2 ~ ~0.7 ~ 0.15 0.3 0.15 0.01 1 force @a[distance=..30]
-execute as @e[scores={berserkLevel=90..}] at @s run particle minecraft:dust 1 0.2 0 3 ~ ~0.5 ~ 0.15 0.3 0.15 0.01 1 force @a[distance=..30]
+execute as @e[scores={berserkLevel=100..}] at @s run particle minecraft:dust 1 0.2 0 3 ~ ~0.5 ~ 0.15 0.3 0.15 0.01 1 force @a[distance=..30]
 
 # Berserk decrease
 execute as @e[scores={berserkLevel=1..,trigger_3s=1}] at @s run scoreboard players remove @s berserkLevel 10

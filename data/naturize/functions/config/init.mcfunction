@@ -37,6 +37,7 @@ scoreboard players operation @s Opt_PartBleeding = Option Opt_PartBleeding
 scoreboard players operation @s Opt_PartBlood = Option Opt_PartBlood
 scoreboard players operation @s Opt_PartFallimp = Option Opt_PartFallimp
 scoreboard players operation @s Opt_PartFury = Option Opt_PartFury
+scoreboard players operation @s Opt_SkillsArrows = Option Opt_SkillsArrows
 scoreboard players operation @s Opt_SkillsBerser = Option Opt_SkillsBerser
 scoreboard players operation @s Opt_SkillsBleed = Option Opt_SkillsBleed
 scoreboard players operation @s Opt_SkillsBurn = Option Opt_SkillsBurn

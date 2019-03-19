@@ -37,6 +37,7 @@ scoreboard objectives add Opt_PartFallimp dummy
 scoreboard objectives add Opt_PartFury dummy
 
 # Skills
+scoreboard objectives add Opt_SkillsArrows dummy
 scoreboard objectives add Opt_SkillsBerser dummy
 scoreboard objectives add Opt_SkillsBleed dummy
 scoreboard objectives add Opt_SkillsBurn dummy

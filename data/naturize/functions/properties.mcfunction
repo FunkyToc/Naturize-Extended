@@ -93,11 +93,11 @@ scoreboard players set Option Opt_EnvWeather 0
 ### PARTICULES
 
 # Bleedings effects (-18)
-# If set to 0 : players won't bleed anymore when low health
+# If set to 0 : players won't bleed when low health
 scoreboard players set Option Opt_PartBleeding 1
 
 # Blood effects on players and entities (-18)
-# If set to 0 : no more blood on damages
+# If set to 0 : no more blood on damage
 scoreboard players set Option Opt_PartBlood 1
 
 # Fall impact
@@ -110,6 +110,11 @@ scoreboard players set Option Opt_PartFury 1
 
 
 ### SKILLS
+
+# Arrows skill
+# If set to 0 : special arrows will be disabled
+scoreboard players set Option Opt_SkillsArrows 1
+
 # Berserk skill
 # If set to 0 : berserk skill will be disabled
 scoreboard players set Option Opt_SkillsBerser 1
