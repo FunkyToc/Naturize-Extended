@@ -81,7 +81,7 @@ scoreboard players set Option Opt_EnvSlimice 1
 # If set to 0 : disable speed and jump effects on sprint
 scoreboard players set Option Opt_EnvWalker 1
 
-# Weapon set
+# Weapon set effect
 # If set to 0 : weapon set won't affect combat
 scoreboard players set Option Opt_EnvWeaponset 1
 
@@ -105,11 +105,18 @@ scoreboard players set Option Opt_PartBlood 1
 scoreboard players set Option Opt_PartFallimp 1
 
 # Entities fury mode
-# If set to 0 : entities won't display particules on danger
+# If set to 0 : entities won't display particules on close danger
 scoreboard players set Option Opt_PartFury 1
 
 
 ### SKILLS
+# Berserk skill
+# If set to 0 : berserk skill will be disabled
+scoreboard players set Option Opt_SkillsBerser 1
+
+# Bleed skill
+# If set to 0 : bleed skill will be disabled
+scoreboard players set Option Opt_SkillsBleed 1
 
 # Burn skill
 # If set to 0 : burn skill will be disabled

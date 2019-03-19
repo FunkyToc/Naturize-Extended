@@ -36,7 +36,9 @@ scoreboard objectives add Opt_PartBlood dummy
 scoreboard objectives add Opt_PartFallimp dummy
 scoreboard objectives add Opt_PartFury dummy
 
-# Particules
+# Skills
+scoreboard objectives add Opt_SkillsBerser dummy
+scoreboard objectives add Opt_SkillsBleed dummy
 scoreboard objectives add Opt_SkillsBurn dummy
 scoreboard objectives add Opt_SkillsStun dummy
 

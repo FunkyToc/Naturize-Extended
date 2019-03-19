@@ -17,8 +17,12 @@ tellraw @s ["",{"text":"Dernières nouveautés :"}]
 
 
 ## Versions messages
+# 0.13.0
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=13..}] ["",{"text":"- Epees tranchantes (saignements) et haches de berserk (status berserk)."}]
+scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=13..}] versionMsgMax 1
+
 # 0.12.0
-tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=12..}] ["",{"text":"- Torche de combat (effets de brulures) et pelles de combat (stun)."}]
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=12..}] ["",{"text":"- Torche de combat (brulures) et pelles de combat (stun)."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=12..}] versionMsgMax 1
 
 # 0.11.0
@@ -30,7 +34,7 @@ tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=10..}] ["",{"tex
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=10..}] versionMsgMax 1
 
 # 0.9.0
-tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] ["",{"text":"- Buff de panoplie d'armure et etat de fatigue."}]
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] ["",{"text":"- Buff de panoplie d'armure et hallucination de fatigue."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=9..}] versionMsgMax 1
 
 # 0.8.0

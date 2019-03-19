@@ -111,6 +111,14 @@ scoreboard players set Option Opt_PartFury 1
 
 ### SKILLS
 
+# Berserk skill
+# If set to 0 : berserk skill will be disabled
+scoreboard players set Option Opt_SkillsBerser 1
+
+# Bleed skill
+# If set to 0 : bleed skill will be disabled
+scoreboard players set Option Opt_SkillsBleed 1
+
 # Burn skill
 # If set to 0 : burn skill will be disabled
 scoreboard players set Option Opt_SkillsBurn 1
