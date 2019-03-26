@@ -3,6 +3,7 @@ Naturize : Extended is a datapack for Minecraft. It upgrade the difficulty (mob 
 
 # Requires 
 - Minecraft 1.13+
+- Pretty Strong PC/Server
 - Bug tolerance
 
 # Use

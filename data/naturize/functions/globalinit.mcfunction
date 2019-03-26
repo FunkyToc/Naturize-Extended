@@ -14,5 +14,7 @@ execute as @s at @s run function naturize:environment/init
 execute as @s at @s run function naturize:particules/init
 execute as @s at @s run function naturize:skills/init
 
+execute as @s run say moi!
+
 # Naturized
-tag @s add Naturized
+execute as @s run tag @s add Naturized

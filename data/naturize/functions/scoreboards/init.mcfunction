@@ -161,8 +161,23 @@ scoreboard objectives add Deaths deathCount
 scoreboard objectives add OnGround dummy
 execute as @s unless entity @s[scores={OnGround=1..}] run scoreboard players set @s OnGround 0
 
-scoreboard objectives add Grounded dummy
-execute as @s unless entity @s[scores={Grounded=1..}] run scoreboard players set @s Grounded 0
+scoreboard objectives add InWaterBot dummy
+execute as @s unless entity @s[scores={InWaterBot=1..}] run scoreboard players set @s InWaterBot 0
+
+scoreboard objectives add InWaterTop dummy
+execute as @s unless entity @s[scores={InWaterTop=1..}] run scoreboard players set @s InWaterTop 0
+
+scoreboard objectives add InWaterFull dummy
+execute as @s unless entity @s[scores={InWaterFull=1..}] run scoreboard players set @s InWaterFull 0
+
+scoreboard objectives add Swim minecraft.custom:minecraft.swim_one_cm
+execute as @s unless entity @s[scores={Swim=1..}] run scoreboard players set @s Swim 0
+
+scoreboard objectives add SwimDistance minecraft.custom:minecraft.swim_one_cm
+execute as @s unless entity @s[scores={SwimDistance=1..}] run scoreboard players set @s SwimDistance 0
+
+scoreboard objectives add SwimReset dummy
+execute as @s unless entity @s[scores={SwimReset=1..}] run scoreboard players set @s SwimReset 0
 
 scoreboard objectives add Jump minecraft.custom:minecraft.jump
 execute as @s unless entity @s[scores={Jump=1..}] run scoreboard players set @s Jump 0
