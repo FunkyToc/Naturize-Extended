@@ -6,7 +6,7 @@
 
 # Official version
 scoreboard players set Option mainversion 0
-scoreboard players set Option subversion 15
+scoreboard players set Option subversion 16
 scoreboard players set Option bugversion 0
 
 # Check earlier versions
