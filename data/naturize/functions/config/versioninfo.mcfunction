@@ -26,7 +26,7 @@ tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=15..}] ["",{"tex
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=15..}] versionMsgMax 1
 
 # 0.14.0
-tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=14..}] ["",{"text":"- Fleche enflammée (torche) et fleche explosive (tnt)."}]
+tellraw @s[scores={versionMsgMax=..4,mainversion=0..,subversion=14..}] ["",{"text":"- Fleche enflammee (torche) et fleche explosive (tnt)."}]
 scoreboard players add @s[scores={versionMsgMax=..4,mainversion=0..,subversion=14..}] versionMsgMax 1
 
 # 0.13.0
