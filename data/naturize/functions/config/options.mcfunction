@@ -19,7 +19,7 @@ scoreboard objectives add Opt_EntVanilla dummy
 scoreboard objectives add Opt_EntBoatkill dummy
 
 # Environment
-scoreboard objectives add Opt_EnvArmorbuff dummy
+scoreboard objectives add Opt_EnvArmorset dummy
 scoreboard objectives add Opt_EnvCombat dummy
 scoreboard objectives add Opt_EnvExhaust dummy
 scoreboard objectives add Opt_EnvHightsens dummy

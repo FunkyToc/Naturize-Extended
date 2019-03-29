@@ -3,6 +3,8 @@
     "minecraft:stone",
     "minecraft:andesite",
     "minecraft:diorite",
-    "minecraft:granite"
+    "minecraft:granite",
+    "minecraft:sandstone",
+    "minecraft:red_sandstone"
   ]
 }

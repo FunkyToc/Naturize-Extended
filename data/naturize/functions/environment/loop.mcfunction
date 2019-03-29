@@ -4,7 +4,7 @@
 #
 
 
-execute if score NaturizeOption Opt_EnvArmorbuff matches 1 run function naturize:environment/armorbuff
+execute if score NaturizeOption Opt_EnvArmorset matches 1 run function naturize:environment/armorset
 execute if score NaturizeOption Opt_EnvCombat matches 1 run function naturize:environment/combat
 execute if score NaturizeOption Opt_EnvExhaust matches 1 run function naturize:environment/exhaust
 execute if score NaturizeOption Opt_EnvHightsens matches 1 run function naturize:environment/hightsense

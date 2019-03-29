@@ -7,7 +7,7 @@
 # Official version
 scoreboard players set NaturizeOption mainversion 0
 scoreboard players set NaturizeOption subversion 16
-scoreboard players set NaturizeOption bugversion 0
+scoreboard players set NaturizeOption bugversion 1
 
 # Check earlier versions
 execute if score @s mainversion < NaturizeOption mainversion as @s run tag @s add updateVersion

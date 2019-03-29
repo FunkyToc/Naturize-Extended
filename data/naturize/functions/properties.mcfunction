@@ -51,7 +51,7 @@ scoreboard players set NaturizeOption Opt_EntBoatkill 1
 
 # Armor's set effects
 # If set to 0 : amor's set effectss will be disabled
-scoreboard players set NaturizeOption Opt_EnvArmorbuff 1
+scoreboard players set NaturizeOption Opt_EnvArmorset 1
 
 # Combat mecanismes
 # If set to 0 : combat mecanismes will be disabled

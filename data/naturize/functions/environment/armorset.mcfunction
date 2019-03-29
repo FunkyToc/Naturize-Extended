@@ -1,4 +1,4 @@
-# naturize:environment/armorbuff
+# naturize:environment/armorset
 # 
 # Add armor effects and particules on player wearing an armor set
 # 
@@ -24,7 +24,7 @@ execute if entity @e[tag=ChainmailAmorSet] run tag @e[tag=ChainmailAmorSet] remo
 
 # Iron set
 execute if entity @e[nbt={Inventory:[{Slot:103b,id:"minecraft:iron_helmet"},{Slot:102b,id:"minecraft:iron_chestplate"},{Slot:101b,id:"minecraft:iron_leggings"},{Slot:100b,id:"minecraft:iron_boots"}]}] as @e[nbt={Inventory:[{Slot:103b,id:"minecraft:iron_helmet"},{Slot:102b,id:"minecraft:iron_chestplate"},{Slot:101b,id:"minecraft:iron_leggings"},{Slot:100b,id:"minecraft:iron_boots"}]}] run tag @s add IronAmorSet
-execute if entity @e[tag=IronAmorSet,scores={trigger_10s=1}] as @e[tag=IronAmorSet,scores={trigger_10s=1}] at @s run effect give @s minecraft:resistance 11 2 true
+execute if entity @e[tag=IronAmorSet,scores={trigger_10s=1}] as @e[tag=IronAmorSet,scores={trigger_10s=1}] at @s run effect give @s minecraft:resistance 11 0 true
 execute if entity @e[tag=IronAmorSet,scores={trigger_1s=1,WalkDistance=0,SprintDistance=0},nbt={OnGround:1b}] as @e[tag=IronAmorSet,scores={trigger_1s=1,WalkDistance=0,SprintDistance=0},nbt={OnGround:1b}] at @s run particle minecraft:end_rod ~ ~1 ~ 0.3 0.4 0.3 0.01 2 normal
 execute if entity @e[tag=IronAmorSet] run tag @e[tag=IronAmorSet] remove IronAmorSet
 
