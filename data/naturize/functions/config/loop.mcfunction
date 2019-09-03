@@ -4,4 +4,4 @@
 # 
 
 
-function naturize:config/versions
+execute if entity @e[tag=Naturized] as @e[tag=Naturized] run function naturize:config/versions

@@ -4,6 +4,6 @@
 # 
 
 
-function naturize:scoreboards/players
-function naturize:scoreboards/randoms
-function naturize:scoreboards/timers
+execute if entity @e[tag=Naturized] as @e[tag=Naturized] run function naturize:scoreboards/players
+execute if entity @e[tag=Naturized] as @e[tag=Naturized] run function naturize:scoreboards/randoms
+execute if entity @e[tag=Naturized] as @e[tag=Naturized] run function naturize:scoreboards/timers

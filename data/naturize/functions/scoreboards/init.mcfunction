@@ -158,9 +158,6 @@ scoreboard objectives add Kills totalKillCount
 scoreboard objectives add Deaths deathCount
 
 # Players status
-scoreboard objectives add OnGround dummy
-execute as @s unless entity @s[scores={OnGround=1..}] run scoreboard players set @s OnGround 0
-
 scoreboard objectives add InWaterBot dummy
 execute as @s unless entity @s[scores={InWaterBot=1..}] run scoreboard players set @s InWaterBot 0
 
@@ -233,11 +230,14 @@ execute as @s unless entity @s[scores={FallDistance=1..}] run scoreboard players
 scoreboard objectives add FallReset dummy
 execute as @s unless entity @s[scores={FallReset=1..}] run scoreboard players set @s FallReset 0
 
-scoreboard objectives add OnAir minecraft.custom:minecraft.fly_one_cm
+scoreboard objectives add OnAir dummy
 execute as @s unless entity @s[scores={OnAir=1..}] run scoreboard players set @s OnAir 0
 
 scoreboard objectives add AirDistance minecraft.custom:minecraft.fly_one_cm
 execute as @s unless entity @s[scores={AirDistance=1..}] run scoreboard players set @s AirDistance 0
+
+scoreboard objectives add AirTime dummy
+execute as @s unless entity @s[scores={AirTime=1..}] run scoreboard players set @s AirTime 0
 
 scoreboard objectives add LastRest minecraft.custom:minecraft.time_since_rest
 execute as @s unless entity @s[scores={LastRest=1..}] run scoreboard players set @s LastRest 0

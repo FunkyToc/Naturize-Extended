@@ -24,11 +24,3 @@ execute as @s[tag=delete010] at @s run scoreboard players set @s subversion 1
 execute as @s[tag=delete010] at @s run scoreboard players set @s bugversion 1
 execute as @s[tag=delete010] at @s run tag @s remove delete010
 
-# V0.8.0
-execute as @s[scores={mainversion=..0,subversion=..7}] at @s run tag @s add delete080
-execute as @s[tag=delete080] at @s run scoreboard objectives remove DmgT
-execute as @s[tag=delete080] at @s run scoreboard objectives remove DmgD
-execute as @s[tag=delete080] at @s run scoreboard players set @s mainversion 0
-execute as @s[tag=delete080] at @s run scoreboard players set @s subversion 8
-execute as @s[tag=delete080] at @s run scoreboard players set @s bugversion 0
-execute as @s[tag=delete080] at @s run tag @s remove delete080

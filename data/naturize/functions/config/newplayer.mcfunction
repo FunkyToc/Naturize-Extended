@@ -4,6 +4,6 @@
 # 
 
 
-execute as @s at @s run tellraw @s ["",{"text":"Bienvenue !"}]
+execute as @s run tellraw @s ["",{"text":"Naturize Extended Bundles activated !"}]
 
-execute as @s at @s run function naturize:globalinit
+execute as @s run function naturize:globalinit
