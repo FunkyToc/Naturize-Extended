@@ -1,9 +1,9 @@
 # Naturize
-Naturize : Extended is a datapack for Minecraft. It upgrade the difficulty (mob regenerations, zombie speed...), add some gameplay mecanismes (fragile ice block, quicksands, armors sets, combat skills, quick travel with grass path...), constants variations (walk speed, diseases, strength...), particules (some cool visual effects, bleedings, choc waves), elite ennemies and events to Minecraft Vanilla. The goal is to improve the "role play" of the game, upgrading the danger and the player's immersion.
+Naturize : Extended is a datapack for Minecraft. It adds some gameplay mecanismes (low gravity physics, realistic nature, quicksands, armors sets, combat skills...), particules (some cool visual effects, bleedings, choc waves). The goal is to add some "role play" of the game, changing few mecanismes for a better immersion.
 
 # Requires 
 - Minecraft 1.14+
-- Pretty Strong PC/Server and/or Low Render Distance
+- Pretty Strong PC/Server
 - Bug tolerance
 
 # Use
