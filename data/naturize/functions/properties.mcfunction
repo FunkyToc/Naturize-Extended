@@ -2,7 +2,11 @@
 #
 # Enable or disable modules from datapack
 # Thoses properties affects the entire map/server and all initialized players
-# /!\ If you mess up with this file, you can copy the "properties_example.mcfunction" file and paste it here to restore default config /!\
+
+## BUNDLES
+# Don't forget to modify the bundles properties files to your needs !
+# You can find thoses files in each bundle folder.
+# Example : "bundles/[bundle_name]/properties.mcfunction"
 
 ## MANUAL
 # Modify numerics values to adjust the datapack to your needs

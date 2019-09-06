@@ -16,9 +16,13 @@
 scoreboard players set LowGravityOption O_LG_Enable 1
 
 # Enable the bundle for all players
-# If set to 0 : enable the bundle for targeted players ONLY 
+# If set to 0 : enable the bundle for targeted players ONLY
 # Use "/scoreboard players set PSEUDO O_LG_Targeted 1" to enable on the player PSEUDO
 scoreboard players set LowGravityOption O_LG_Targeted 1
+
+# Physicals activators
+# If set to 0 : ignoring activator pads
+scoreboard players set LowGravityOption O_LG_Activators 1
 
 # Low gravity physics
 # If set to 0 : normal gravity occured

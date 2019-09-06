@@ -5,9 +5,9 @@
 
 
 ## MANUAL
-# 1. Open "properties.mcfunction" and set "O_NE_Enable" to 0
-# 2. Reload your serveur/map using "/reload"
-# 3. Run this script in game with : "/function naturize:globaluninstall"
+# 1. Disable Naturize datapack by opening "properties.mcfunction" and set "O_NE_Enable" to 0
+# 2. Reload your serveur/map using "/reload" in the game
+# 3. Run this script in game with : "/function naturize:globaluninstall" to delete most of the scoreboards and tag
 
 
 function naturize:config/uninstall
