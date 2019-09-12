@@ -1,6 +1,6 @@
 # naturize:bundles/init
 #
-# Init all scores required in bundles/ 
+# Init player's scores required in bundles/ 
 #
 
 

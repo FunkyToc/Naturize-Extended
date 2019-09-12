@@ -5,7 +5,7 @@
 
 ## Intro
 tellraw @s ["",{"text":"You are playing with "},{"text":"Naturize","color":"dark_green"},{"text":" datapack !"}]
-tellraw @s ["",{"text":"Current bundles :"}]
+tellraw @s ["",{"text":"Current activated bundles :"}]
 
 
 ## Bundles

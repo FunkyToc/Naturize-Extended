@@ -27,4 +27,4 @@ scoreboard players set NaturizeOption O_NE_Newplayer 1
 
 # Display update's informations in the chat and the screen
 # If set to 0 : updates will be enabled but totally silent
-scoreboard players set NaturizeOption O_NE_Versioninfo 1
+scoreboard players set NaturizeOption O_NE_Bundlesinfo 1

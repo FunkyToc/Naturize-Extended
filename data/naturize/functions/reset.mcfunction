@@ -1,10 +1,9 @@
-# naturize:globalinit
+# Reset script
 #
-# Centralize all inits
-# Set all scoreboards & tags
+# Reset all player's scores and copy properties default files
+#
 
 
-# Inits
 function naturize:config/init
 function naturize:scoreboards/init
 function naturize:bundles/init
