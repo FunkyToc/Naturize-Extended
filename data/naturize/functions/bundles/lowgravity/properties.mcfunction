@@ -1,6 +1,10 @@
 ### LOW GRAVITY BUNDLE
+###
+### Developped by FunkyToc
+### With love
+### And a big amount of time
 
-# PROPERTIES
+## PROPERTIES
 #
 # Enable or disable modules from datapack
 # Thoses properties affects all initialized players in the entire map/server
@@ -11,13 +15,15 @@
 # Set the scoreboard value to 0 to DISABLE
 
 
+## CONFIG
+
 # Enable / disable the bundle
 # If set to 0 : disable the bundle
 scoreboard players set LowGravityOption O_LG_Enable 1
 
 # Enable the bundle for all players
 # If set to 0 : enable the bundle for targeted players ONLY
-# Use "/scoreboard players set PSEUDO O_LG_Targeted 1" to enable on the player PSEUDO
+# Use "/scoreboard players set PSEUDO O_LG_Targeted 1" to enable on the player PSEUDO at any time
 scoreboard players set LowGravityOption O_LG_Targeted 0
 
 # Physicals activators

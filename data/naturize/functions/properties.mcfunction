@@ -1,5 +1,10 @@
-# PROPERTIES
-#
+### NATURIZE EXTENDED BUNDLE
+###
+### Developped by FunkyToc
+### With love
+### And a big amount of time
+
+## PROPERTIES
 # Enable or disable modules from datapack
 # Thoses properties affects the entire map/server and all initialized players
 
@@ -14,7 +19,7 @@
 # Set the scoreboard value to 0 to DISABLE
 
 
-### CONFIG
+## CONFIG
 
 # Enable the entire Naturize datapack
 # If set to 0 : all mecanismes and bundles will be disabled
@@ -26,5 +31,5 @@ scoreboard players set NaturizeOption O_NE_Enable 1
 scoreboard players set NaturizeOption O_NE_Newplayer 1
 
 # Display update's informations in the chat and the screen
-# If set to 0 : updates will be enabled but totally silent
+# If set to 0 : bundles will be enabled but totally silent
 scoreboard players set NaturizeOption O_NE_Bundlesinfo 1
