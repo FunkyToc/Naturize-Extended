@@ -5,7 +5,6 @@
 
 
 # Options
-scoreboard objectives add O_LG_Enable dummy
 scoreboard objectives add O_LG_Targeted dummy
 scoreboard objectives add O_LG_Activators dummy
 scoreboard objectives add O_LG_LowGravity dummy

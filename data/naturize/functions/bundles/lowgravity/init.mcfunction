@@ -5,7 +5,6 @@
 
 
 # Copy properties to the player
-scoreboard players operation @s O_LG_Enable = LowGravityOption O_LG_Enable
 scoreboard players operation @s O_LG_Targeted = LowGravityOption O_LG_Targeted
 scoreboard players operation @s O_LG_Activators = LowGravityOption O_LG_Activators
 scoreboard players operation @s O_LG_LowGravity = LowGravityOption O_LG_LowGravity

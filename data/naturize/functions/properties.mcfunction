@@ -33,3 +33,9 @@ scoreboard players set NaturizeOption O_NE_Newplayer 1
 # Display update's informations in the chat and the screen
 # If set to 0 : bundles will be enabled but totally silent
 scoreboard players set NaturizeOption O_NE_Bundlesinfo 1
+
+## BUNDLES
+
+# Low Gravity
+# If set to 0 : the bundle will be disabled
+scoreboard players set LowGravityOption O_LG_Enable 1
