@@ -6,4 +6,3 @@
 
 execute if entity @e[tag=Naturize] as @e[tag=Naturize] run function naturize:scoreboards/players
 execute if entity @e[tag=Naturize] as @e[tag=Naturize] run function naturize:scoreboards/randoms
-execute if entity @e[tag=Naturize] as @e[tag=Naturize] run function naturize:scoreboards/timers

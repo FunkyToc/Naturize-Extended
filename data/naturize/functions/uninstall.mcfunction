@@ -18,3 +18,7 @@ tag @a remove Naturize
 # Delete datapack folder
 tellraw @a {"text":"/!\\ Naturize-Extended uninstalled /!\\","color":"red"}
 tellraw @a {"text":"/!\\ Don't forget to delete the \"Naturize-Extended\" folder in \".../saves/datapacks/\" /!\\","color":"red"}
+tellraw @a {"text":"/!\\ If you did not want to uninstall, use \"/datapack enable \"file/Naturize-Extended\"\" /!\\","color":"red"}
+
+# Disable datapack 
+datapack disable "file/Naturize-Extended"
