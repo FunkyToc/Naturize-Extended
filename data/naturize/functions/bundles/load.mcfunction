@@ -5,3 +5,4 @@
 
 
 function naturize:bundles/lowgravity/load
+function naturize:bundles/veganmaster/load

@@ -1,0 +1,36 @@
+{
+  "values": [
+    "minecraft:rabbit",
+    "minecraft:cooked_rabbit",
+    "minecraft:chicken",
+    "minecraft:cooked_chicken",
+    "minecraft:mutton",
+    "minecraft:cooked_mutton",
+    "minecraft:beef",
+    "minecraft:cooked_beef",
+    "minecraft:porkchop",
+    "minecraft:cooked_porkchop",
+    "minecraft:rotten_flesh",
+
+    "minecraft:salmon",
+    "minecraft:cooked_salmon",
+    "minecraft:cod",
+    "minecraft:cooked_cod",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish", 
+
+    "minecraft:egg",
+    "minecraft:pumpkin_pie",
+    "minecraft:leather",
+    "minecraft:milk_bucket",
+    "minecraft:rabbit_hide",
+    "minecraft:rabbit_foot",
+    "minecraft:leather",
+
+    "minecraft:leather_helmet",
+    "minecraft:leather_chestplate",
+    "minecraft:leather_leggings",
+    "minecraft:leather_boots",
+    "minecraft:leather_horse_armor"
+  ]
+}

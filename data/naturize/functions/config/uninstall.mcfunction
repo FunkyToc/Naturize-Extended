@@ -11,3 +11,4 @@ scoreboard objectives remove O_NE_Bundlesinfo
 
 # Bundles
 scoreboard objectives remove O_LG_Enable
+scoreboard objectives remove O_VM_Enable

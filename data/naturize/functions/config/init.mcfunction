@@ -11,3 +11,4 @@ scoreboard players operation @s O_NE_Bundlesinfo = NaturizeOption O_NE_Bundlesin
 
 # Bundles
 scoreboard players operation @s O_LG_Enable = LowGravityOption O_LG_Enable
+scoreboard players operation @s O_VM_Enable = LowGravityOption O_VM_Enable

@@ -5,3 +5,4 @@
 
 
 function naturize:bundles/lowgravity/uninstall
+function naturize:bundles/veganmaster/uninstall

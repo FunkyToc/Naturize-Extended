@@ -34,8 +34,13 @@ scoreboard players set NaturizeOption O_NE_Newplayer 1
 # If set to 0 : bundles will be enabled but totally silent
 scoreboard players set NaturizeOption O_NE_Bundlesinfo 1
 
+
 ## BUNDLES
 
 # Low Gravity
 # If set to 0 : the bundle will be disabled
 scoreboard players set LowGravityOption O_LG_Enable 1
+
+# Vegan Master
+# If set to 0 : the bundle will be disabled
+scoreboard players set VeganMasterOption O_VM_Enable 1
