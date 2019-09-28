@@ -26,6 +26,14 @@ scoreboard players set VeganMasterOption O_VM_Targeted 0
 # If set to 0 : player no longer can become vegan by rising the totem
 scoreboard players set VeganMasterOption O_VM_TotemInit 1
 
+# Vegan Totem initiation
+# If set to 0 : player no longer can become vegan by rising the totem
+scoreboard players set VeganMasterOption O_VM_Unvegan 1
+
+# Vegan Style
+# If set to 0 : player no longer can wear leather armors without complaining
+scoreboard players set VeganMasterOption O_VM_VeganStyle 1
+
 # Meat smells spread around the player if meat in inventory (can be smell by other player)
 # If set to 0 : your friends won't know if you cheat !
 scoreboard players set VeganMasterOption O_VM_Smells 1
