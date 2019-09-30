@@ -11,4 +11,4 @@ execute if score LowGravityOption O_LG_LowGravity matches 1 as @a[tag=Naturize,s
 execute if score LowGravityOption O_LG_SlowMoves matches 1 as @a[tag=Naturize,scores={O_LG_SlowMoves=1,O_LG_Targeted=1}] at @s run function naturize:bundles/lowgravity/slowmoves
 
 # Full server conserned
-execute if score LowGravityOption O_LG_Targeted matches 1 run function naturize:bundles/lowgravity/mobsgravity
+execute if score LowGravityOption O_LG_Targeted matches 1 if entity @a[tag=Naturize] run function naturize:bundles/lowgravity/mobsgravity
