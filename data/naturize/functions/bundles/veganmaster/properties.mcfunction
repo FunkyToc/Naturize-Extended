@@ -27,7 +27,7 @@ scoreboard players set VeganMasterOption O_VM_Targeted 0
 scoreboard players set VeganMasterOption O_VM_TotemInit 1
 
 # Vegan Totem initiation
-# If set to 0 : player no longer can become vegan by rising the totem
+# If set to 0 : player no longer can leave the vegan mod
 scoreboard players set VeganMasterOption O_VM_Unvegan 1
 
 # Vegan Style
