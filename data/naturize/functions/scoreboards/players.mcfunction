@@ -77,6 +77,12 @@ scoreboard players set @s[nbt={OnGround:1b}] OnAir 0
 scoreboard players set @s[scores={AirTime=1..},nbt={OnGround:1b}] AirTime 0
 scoreboard players add @s[nbt={OnGround:0b}] AirTime 1
 
+# Elytra distance
+scoreboard players set @s[nbt={OnGround:1b}] ElytraDistance 0
+
+# Elytra time
+scoreboard players set @s[scores={ElytraTime=1..},nbt={OnGround:1b}] ElytraTime 0
+scoreboard players add @s[scores={ElytraDistance=1..}] ElytraTime 1
 
 # On climb
 scoreboard players set @s[nbt={OnGround:1b},scores={ClimbDistance=1..}] ClimbDistance 0

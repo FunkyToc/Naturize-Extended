@@ -38,6 +38,8 @@ execute unless entity @s[scores={FallReset=1..}] run scoreboard players set @s F
 execute unless entity @s[scores={OnAir=1..}] run scoreboard players set @s OnAir 0
 execute unless entity @s[scores={AirDistance=1..}] run scoreboard players set @s AirDistance 0
 execute unless entity @s[scores={AirTime=1..}] run scoreboard players set @s AirTime 0
+execute unless entity @s[scores={ElytraDistance=1..}] run scoreboard players set @s ElytraDistance 0
+execute unless entity @s[scores={ElytraTime=1..}] run scoreboard players set @s ElytraTime 0
 execute unless entity @s[scores={LastRest=1..}] run scoreboard players set @s LastRest 0
 execute unless entity @s[scores={LastDeath=1..}] run scoreboard players set @s LastDeath 0
 execute unless entity @s[scores={DmgDealt=1..}] run scoreboard players set @s DmgDealt 0

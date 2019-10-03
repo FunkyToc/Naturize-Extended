@@ -18,6 +18,7 @@ execute if score LowGravityOption O_LG_Activators matches 1 as @a[tag=Naturize,s
 
 # lowgravity
 execute if score LowGravityOption O_LG_LowGravity matches 1 as @a[tag=Naturize,scores={O_LG_Targeted=1,O_LG_LowGravity=1,AirTime=..300},nbt={OnGround:0b}] at @s run tag @s add lowgravity_fall
+execute if score LowGravityOption O_LG_LowGravity matches 1 as @a[tag=Naturize,scores={O_LG_Targeted=1,O_LG_LowGravity=1,ElytraDistance=1..},nbt={OnGround:0b}] at @s run tag @s add lowgravity_fall
 execute if score LowGravityOption O_LG_LowGravity matches 1 as @a[tag=Naturize,scores={O_LG_Targeted=1,O_LG_LowGravity=1,Jumping=1},nbt={OnGround:0b}] at @s run tag @s add lowgravity_jump
 execute if score LowGravityOption O_LG_LowGravity matches 1 as @a[tag=Naturize,scores={O_LG_Targeted=1,O_LG_LowGravity=1,Sprint=1..},nbt={OnGround:1b}] at @s run tag @s add lowgravity_sprint
 

@@ -4,6 +4,4 @@
 #
 
 
-function naturize:config/init
-function naturize:scoreboards/init
-function naturize:bundles/init
+function naturize:globalinit

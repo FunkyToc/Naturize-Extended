@@ -45,6 +45,8 @@ scoreboard objectives add FallReset dummy
 scoreboard objectives add OnAir dummy
 scoreboard objectives add AirDistance minecraft.custom:minecraft.fly_one_cm
 scoreboard objectives add AirTime dummy
+scoreboard objectives add ElytraDistance minecraft.custom:minecraft.aviate_one_cm
+scoreboard objectives add ElytraTime dummy
 scoreboard objectives add LastRest minecraft.custom:minecraft.time_since_rest
 scoreboard objectives add LastDeath minecraft.custom:minecraft.time_since_death
 scoreboard objectives add DmgDealt minecraft.custom:minecraft.damage_dealt

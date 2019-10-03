@@ -8,6 +8,8 @@
 scoreboard players set NaturizeOption O_NE_Enable 0
 scoreboard players set NaturizeOption O_NE_Newplayer 0
 scoreboard players set NaturizeOption O_NE_Bundlesinfo 0
+scoreboard players set NaturizeOption O_LG_Enable 0
+scoreboard players set NaturizeOption O_VM_Enable 0
 
 function naturize:config/uninstall
 function naturize:scoreboards/uninstall
