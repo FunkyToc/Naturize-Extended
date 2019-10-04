@@ -16,7 +16,7 @@ execute if score VeganMasterOption O_VM_TotemInit matches 1 as @a[tag=Naturize,s
 execute as @a[tag=Naturize,scores={O_VM_Targeted=1}] run function naturize:bundles/veganmaster/veganmaster
 
 # strictmod
-execute if score VeganMasterOption O_VM_Strictmod matches 1 as @a[tag=Naturize,scores={O_VM_Targeted=1,O_VM_Strictmod=1}] run function naturize:bundles/veganmaster/strictmod
+execute if score VeganMasterOption O_VM_Strictmod matches 1 as @a[tag=Naturize,scores={O_VM_Targeted=1,O_VM_Strictmod=1,VM_NotVegItems=1..}] run tag @s add strictmod
 
 # unvegan
 execute if score VeganMasterOption O_VM_Unvegan matches 1 as @a[tag=Naturize,scores={O_VM_Targeted=1,VM_TotalEatNow=3..}] run tag @s add unvegan
@@ -61,8 +61,6 @@ execute if score VeganMasterOption O_VM_VeganStyle matches 1 as @a[tag=Naturize,
 execute if score VeganMasterOption O_VM_VeganStyle matches 1 as @a[tag=Naturize,scores={O_VM_Targeted=1,O_VM_VeganStyle=1,VM_T_Disgust=0,random1=75..80},nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots"}]}] run tag @s add notveganstyle
 
 # disgust
-execute if score VeganMasterOption O_VM_Disgust matches 1 as @a[tag=Naturize,scores={O_VM_Targeted=1,O_VM_Disgust=1}] at @s run function naturize:bundles/veganmaster/disgust
-
 execute if score VeganMasterOption O_VM_Disgust matches 1 as @a[tag=Naturize,nbt={SelectedItem:{id:"minecraft:rabbit"}},scores={O_VM_Targeted=1,O_VM_Disgust=1,random1=25..30,VM_T_Disgust=0}] run tag @s add disgustMeat
 execute if score VeganMasterOption O_VM_Disgust matches 1 as @a[tag=Naturize,nbt={SelectedItem:{id:"minecraft:cooked_rabbit"}},scores={O_VM_Targeted=1,O_VM_Disgust=1,random1=25..30,VM_T_Disgust=0}] run tag @s add disgustMeat
 execute if score VeganMasterOption O_VM_Disgust matches 1 as @a[tag=Naturize,nbt={SelectedItem:{id:"minecraft:chicken"}},scores={O_VM_Targeted=1,O_VM_Disgust=1,random1=25..30,VM_T_Disgust=0}] run tag @s add disgustMeat
@@ -105,3 +103,4 @@ execute as @a[tag=disgustMeat] at @s run function naturize:bundles/veganmaster/d
 execute as @a[tag=disgustFish] at @s run function naturize:bundles/veganmaster/disgust
 execute as @a[tag=disgustAnimal] at @s run function naturize:bundles/veganmaster/disgust
 execute as @a[tag=disgustLeather] at @s run function naturize:bundles/veganmaster/disgust
+execute as @a[tag=strictmod] at @s run function naturize:bundles/veganmaster/strictmod

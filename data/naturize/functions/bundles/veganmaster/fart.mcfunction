@@ -10,4 +10,4 @@ execute as @s[scores={random1=46}] run playsound minecraft:block.slime_block.ste
 execute as @s[scores={random1=46}] run playsound minecraft:block.lava.extinguish player @a ~ ~0.5 ~ 0.1 0.5 0.2
 execute as @s[scores={random1=46}] run playsound minecraft:block.lava.pop player @a ~ ~0.5 ~ 0.3 0.5 0.2
 
-tag @s[scores={random1=0..25}] remove fart
+tag @s[scores={random1=55..75}] remove fart
